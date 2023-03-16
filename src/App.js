@@ -1,9 +1,9 @@
-import { Home } from "./views/Home/Home";
+import { Navigation } from "./routes/Navigation";
 
 function App() {
   return (
     <div>
-      <Home />
+      <Navigation />
     </div>
   );
 }
