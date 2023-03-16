@@ -1,9 +1,7 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  container: {
-    backgroundColor: "red",
-  },
+  container: {},
 }));
 
 export { useStyles };
