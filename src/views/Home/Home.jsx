@@ -1,6 +1,6 @@
 import React from "react";
 import { useStyles } from "./HomeStyles";
-import { SplashScreen } from "../../components/SplashScreen/SplashScreen";
+import { Images } from "../../assets/Images";
 import { Typography } from "@material-ui/core";
 
 export const Home = () => {

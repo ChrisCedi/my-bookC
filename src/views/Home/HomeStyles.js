@@ -1,7 +1,9 @@
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
-  container: {},
+  container: {
+    height: "100vh",
+  },
 }));
 
 export { useStyles };
