@@ -3,8 +3,7 @@ import { Images } from "../assets/Images";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundImage: "linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)",
-    // backgroundImage: `url(${Images.baseBackground})`,
+    backgroundImage: `url(${Images.main})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundAttachment: "fixed",
