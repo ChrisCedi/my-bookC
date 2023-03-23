@@ -1,10 +1,12 @@
-import { Home } from "./views/Home/Home";
+import { Navigation } from "./routes/Navigation";
+import { ThemeProvider } from "@material-ui/core";
+import { theme } from "./themeConfig";
 
 function App() {
   return (
-    <div>
-      <Home />
-    </div>
+    <ThemeProvider theme={theme}>
+      <Navigation />
+    </ThemeProvider>
   );
 }
 
