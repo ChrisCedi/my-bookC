@@ -1,14 +1,15 @@
 import React from "react";
 import { useStyles } from "./HomeStyles";
-import { Images } from "../../assets/Images";
-import { Typography } from "@material-ui/core";
+import { MainSection } from "../../components/MainSection/MainSection";
+import { AboutMe } from "../../components/AboutMe/AboutMe";
 
 export const Home = () => {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
-      <Typography>Home</Typography>
+    <div>
+      <MainSection />
+      <AboutMe />
     </div>
   );
 };

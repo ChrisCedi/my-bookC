@@ -32,7 +32,7 @@ export const SplashScreen = () => {
       >
         <Button
           variant="contained"
-          color="secondary"
+          color="primary"
           onClick={() => {
             navigate("/home");
           }}

@@ -1,13 +1,17 @@
 import React from "react";
 import { Container } from "@material-ui/core";
 import { useStyles } from "./BaseLayoutStyles";
+import { Header } from "../components/Header/Header";
 
 export const BaseLayout = ({ children }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.container}>
-      <Container>{children}</Container>
+    <div>
+      <Header />
+      <div className={classes.body}>
+        <Container>{children}</Container>
+      </div>
     </div>
   );
 };
