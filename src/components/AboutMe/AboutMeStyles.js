@@ -37,6 +37,10 @@ const useStyles = makeStyles((theme) => ({
   textButton: {
     textDecoration: "none",
   },
+  motionImage: {
+    width: "100%",
+    height: "100%",
+  },
 }));
 
 export { useStyles };

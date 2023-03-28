@@ -2,17 +2,13 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "90vh",
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
   },
-  boxTitle: {
-    backgroundColor: theme.palette.primary.main,
-    padding: theme.spacing(6),
-    borderRadius: 10,
-  },
+
   motionDiv: {
     display: "flex",
     flexDirection: "column",

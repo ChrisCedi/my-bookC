@@ -1,22 +1,32 @@
 import { Typography, Button, Grid } from "@material-ui/core";
-import React from "react";
+import React, { useRef } from "react";
 import { useStyles } from "./AboutMeStyles";
 import { Images } from "../../assets/Images";
-// import { PersonalFiles } from "../../assets/PersonalFiles";
 import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
+import { useInView, motion } from "framer-motion";
 
 export const AboutMe = () => {
   const classes = useStyles();
+  const ref = useRef(null);
+  const isInVIew = useInView(ref, { once: true });
 
   return (
-    <section id="aboutMe" className={classes.container}>
+    <section id="aboutMe" className={classes.container} ref={ref}>
       <Grid container className={classes.firstContainer}>
         <Grid item xs={12} md={7}>
           <Grid container className={classes.secondContainer}>
             <Grid item xs={12} className={classes.gridInfo}>
-              <Typography variant="h3" className={classes.title}>
-                About me
-              </Typography>
+              <span
+                style={{
+                  transform: isInVIew ? "none" : "translateX(-200px)",
+                  opacity: isInVIew ? 1 : 0,
+                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
+                }}
+              >
+                <Typography variant="h3" className={classes.title}>
+                  About me
+                </Typography>
+              </span>
               <Typography className={classes.information}>
                 añslmdlasdkals dck sckj dclsdklmdflksdmflkmsdlks cl dsjk ckdjsf
                 sdjk fdjsk fkjsd fj skdf skf elkf dslkf slkd flsd sd cldsk clksd
@@ -45,11 +55,18 @@ export const AboutMe = () => {
           </Grid>
         </Grid>
         <Grid item xs={12} md={5} className={classes.gridImage}>
-          <img
-            src={Images.developer}
-            alt="developer"
-            className={classes.developer}
-          />
+          <motion.div
+            // className="box"
+            className={classes.motionImage}
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 400, damping: 10 }}
+          >
+            <img
+              src={Images.developer}
+              alt="developer"
+              className={classes.developer}
+            />
+          </motion.div>
         </Grid>
       </Grid>
     </section>
