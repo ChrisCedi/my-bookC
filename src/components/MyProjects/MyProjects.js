@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { useStyles } from "./MyProjectsStyles";
-import { useInView } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 import { Typography, Grid } from "@material-ui/core";
 import { projects } from "./helpers";
 
@@ -35,10 +35,17 @@ export const MyProjects = () => {
       >
         {projects.map((item, index) => (
           <Grid item xs={12} md={4} lg={3}>
-            <Grid className={classes.cardProject} key={index}>
+            <motion.div
+              className={classes.cardProject}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+            >
+              {/* <Grid className={classes.cardProject} key={index}> */}
+
               <Typography>{item.nameProject}</Typography>
               <Typography>{item.description}</Typography>
-            </Grid>
+              {/* </Grid> */}
+            </motion.div>
           </Grid>
         ))}
       </Grid>

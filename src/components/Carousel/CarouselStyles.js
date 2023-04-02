@@ -8,8 +8,23 @@ const useStyles = makeStyles((theme) => ({
     height: "200px",
   },
   slider: {
-    backgroundColor: "red",
-    height: "150px",
+    height: "190px",
+  },
+  sliderImage: {
+    backgroundPposition: "center",
+    backgroundSize: "cover",
+    width: "190px",
+    height: "190px",
+    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: theme.spacing(0),
+      marginRight: theme.spacing(0),
+    },
+  },
+  imageSlider: {
+    display: "block",
+    width: "100%",
   },
 }));
 

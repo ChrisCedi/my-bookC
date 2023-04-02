@@ -5,20 +5,11 @@ import { Images } from "../../assets/Images";
 import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
 import { useInView, motion } from "framer-motion";
 import { Carousel } from "../Carousel/Carousel";
-import Slider from "react-slick";
 
 export const AboutMe = () => {
   const classes = useStyles();
   const ref = useRef(null);
   const isInVIew = useInView(ref, { once: true });
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  };
 
   return (
     <section id="aboutMe" className={classes.container} ref={ref}>
