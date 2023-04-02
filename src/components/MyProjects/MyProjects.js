@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { useStyles } from "./MyProjectsStyles";
 import { useInView, motion } from "framer-motion";
-import { Typography, Grid } from "@material-ui/core";
+import { Typography, Grid, Button } from "@material-ui/core";
 import { projects } from "./helpers";
 
 export const MyProjects = () => {
@@ -34,17 +34,18 @@ export const MyProjects = () => {
         }}
       >
         {projects.map((item, index) => (
-          <Grid item xs={12} md={4} lg={3}>
+          <Grid item xs={12} md={4}>
             <motion.div
               className={classes.cardProject}
               whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 400, damping: 10 }}
+              transition={{ type: "tween", stiffness: 400, damping: 10 }}
+              key={index}
             >
-              {/* <Grid className={classes.cardProject} key={index}> */}
-
               <Typography>{item.nameProject}</Typography>
               <Typography>{item.description}</Typography>
-              {/* </Grid> */}
+              <Button variant="contained" color="primary">
+                Ver más
+              </Button>
             </motion.div>
           </Grid>
         ))}
