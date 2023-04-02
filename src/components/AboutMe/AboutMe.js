@@ -4,6 +4,7 @@ import { useStyles } from "./AboutMeStyles";
 import { Images } from "../../assets/Images";
 import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
 import { useInView, motion } from "framer-motion";
+import { Carousel } from "../Carousel/Carousel";
 
 export const AboutMe = () => {
   const classes = useStyles();
@@ -39,24 +40,23 @@ export const AboutMe = () => {
                 download="cv - Christian Cedillo"
                 className={classes.textButton}
               >
-                <Button color="primary" variant="contained">
+                <Button
+                  color="primary"
+                  variant="contained"
+                  style={{ fontWeight: 700 }}
+                >
                   Descargar CV
                 </Button>
               </a>
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              style={{ height: "200px", backgroundColor: "red" }}
-            >
-              sdfas
+            <Grid item xs={12}>
+              <Carousel />
             </Grid>
           </Grid>
         </Grid>
         <Grid item xs={12} md={5} className={classes.gridImage}>
           <motion.div
-            // className="box"
             className={classes.motionImage}
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 400, damping: 10 }}
