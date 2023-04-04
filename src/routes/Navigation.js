@@ -1,6 +1,12 @@
 import { Helmet } from "react-helmet";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import { routes } from "./routes";
+import { BaseLayout } from "../layouts/BaseLayout";
 
 export const Navigation = () => {
   return (
@@ -23,6 +29,7 @@ export const Navigation = () => {
             }
           />
         ))}
+        <Route key={404} path="*" element={<Navigate to="not-found" />} />
       </Routes>
     </Router>
   );

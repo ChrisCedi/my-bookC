@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
   containerDefault: {
     height: "100vh",
   },
+  footer: {
+    position: "absolute",
+    width: "100%",
+    bottom: 0,
+  },
 }));
 
 export { useStyles };
