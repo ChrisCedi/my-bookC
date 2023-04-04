@@ -10,6 +10,7 @@ export const theme = createTheme({
     },
     background: {
       primary: "#F7F9F9",
+      secondary: "#E5E8E8",
     },
   },
 });

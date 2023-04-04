@@ -1,8 +1,9 @@
 import React from "react";
 import { useStyles } from "./MainSectionStyles";
 import { motion } from "framer-motion";
-import { Typography, IconButton } from "@material-ui/core";
+import { Typography, IconButton, Box } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { Images } from "../../assets/Images";
 
 export const MainSection = () => {
   const classes = useStyles();
@@ -19,12 +20,25 @@ export const MainSection = () => {
         }}
         className={classes.motionDiv}
       >
-        <Typography variant="h2" className={classes.mainInfo}>
-          Christian Cedillo
-        </Typography>
-        <Typography variant="h2" className={classes.mainInfo}>
-          Frontend Developer
-        </Typography>
+        <Box>
+          <Typography variant="h2" color="primary" className={classes.mainInfo}>
+            Christian Cedillo
+          </Typography>
+          <Typography
+            variant="h2"
+            color="secondary"
+            className={classes.mainInfo}
+          >
+            Frontend Developer
+          </Typography>
+        </Box>
+        <Box>
+          <img
+            src={Images.presentationImage}
+            alt="working"
+            className={classes.image}
+          />
+        </Box>
         <IconButton
           onClick={() =>
             document.getElementById("aboutMe").scrollIntoView({

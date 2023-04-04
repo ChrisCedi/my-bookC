@@ -10,7 +10,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { EffectCoverflow, Pagination, Autoplay, Navigation } from "swiper";
 
 export const Carousel = () => {
   const classes = useStyles();
@@ -19,6 +19,10 @@ export const Carousel = () => {
     <Swiper
       effect={"coverflow"}
       grabCursor={true}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
       centeredSlides={true}
       slidesPerView={"auto"}
       coverflowEffect={{
@@ -29,7 +33,8 @@ export const Carousel = () => {
         slideShadows: false,
       }}
       pagination={true}
-      modules={[EffectCoverflow, Pagination]}
+      navigation={true}
+      modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
       className={classes.slider}
     >
       <SwiperSlide className={classes.sliderImage}>
@@ -42,7 +47,7 @@ export const Carousel = () => {
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://play-lh.googleusercontent.com/tZywwDYlqDzJ7FMjcCY9heOO_A66M94duhvS6pDLouPKZSUYDtkrx4Y-mF9EGpewe-Q=w240-h480-rw"
+          src="https://d2vqpl3tx84ay5.cloudfront.net/500x/tumblr_lsus01g1ik1qies3uo1_400.png"
           alt="js"
         />
       </SwiperSlide>

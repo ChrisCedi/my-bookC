@@ -3,22 +3,29 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
-    height: "105vh",
-    [theme.breakpoints.down("xs")]: {
+    height: "100vh",
+    [theme.breakpoints.down("sm")]: {
       height: "100%",
     },
   },
   developer: {
     width: "100%",
     height: "100%",
+    paddingTop: theme.spacing(6),
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: theme.spacing(2),
+    },
   },
   title: {
     paddingTop: theme.spacing(10),
     paddingBottom: theme.spacing(2),
+    fontWeight: 600,
+    textShadow: "2px 2px #000000",
   },
   information: {
     paddingTop: theme.spacing(1),
-    paddingBottom: theme.spacing(2),
+    paddingBottom: theme.spacing(1),
+    textAlign: "center",
   },
   gridInfo: {
     display: "flex",
@@ -40,12 +47,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "flex-end",
   },
-  textButton: {
-    textDecoration: "none",
-  },
+
   motionImage: {
     width: "100%",
     height: "100%",
+  },
+  myInformation: {
+    backgroundColor: theme.palette.background.primary,
+    height: "400px",
   },
 }));
 

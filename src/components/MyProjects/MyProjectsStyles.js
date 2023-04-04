@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     paddingTop: theme.spacing(10),
+    fontWeight: 600,
+    textShadow: "2px 2px #000000",
   },
   containerCards: {
     paddingTop: theme.spacing(8),
