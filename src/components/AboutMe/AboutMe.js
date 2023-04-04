@@ -34,9 +34,9 @@ export const AboutMe = () => {
                     About me
                   </Typography>
                 </span>
-                <span
+                <Grid
+                  className={classes.gridText}
                   style={{
-                    // animationDelay:
                     transform: isInVIew ? "none" : "translateX(-200px)",
                     opacity: isInVIew ? 1 : 0,
                     transition:
@@ -51,15 +51,14 @@ export const AboutMe = () => {
                   <Typography className={classes.information}>
                     Me apasiona el desarrollo de software creando diseños
                     minimalistas y atractivos que genere un interés en cada uno
-                    de los usuarios brindando una experiencia única y muy
-                    satisfactoria.
+                    de los usuarios brindando una experiencia única.
                   </Typography>
                   <Typography className={classes.information}>
                     Explora mi portafolio, conoce mi trabajo, si estas
                     interesado en trabajar conmigo no dudes en contactarme.
                     Estoy listo para crear la web que necesitas.
                   </Typography>
-                </span>
+                </Grid>
               </Grid>
 
               <Grid item xs={12}>
