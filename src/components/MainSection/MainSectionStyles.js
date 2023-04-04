@@ -8,7 +8,6 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     flexDirection: "column",
   },
-
   motionDiv: {
     display: "flex",
     flexDirection: "column",
@@ -26,12 +25,18 @@ const useStyles = makeStyles((theme) => ({
   },
   mainInfo: {
     textAlign: "center",
+    fontWeight: 600,
+    textShadow: "2px 2px #000000",
     [theme.breakpoints.down("sm")]: {
       fontSize: theme.typography.h5.fontSize,
     },
   },
   iconButton: {
     color: theme.palette.common.black,
+  },
+
+  image: {
+    height: "250px",
   },
 }));
 

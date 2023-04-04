@@ -8,15 +8,17 @@ const useStyles = makeStyles((theme) => ({
     height: "200px",
   },
   slider: {
-    height: "190px",
+    height: "140px",
+    paddingTop: theme.spacing(4),
   },
   sliderImage: {
     backgroundPposition: "center",
     backgroundSize: "cover",
-    width: "190px",
-    height: "190px",
-    marginLeft: theme.spacing(2),
-    marginRight: theme.spacing(2),
+    width: "140px",
+    height: "140px",
+
+    marginLeft: theme.spacing(6),
+    marginRight: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
       marginLeft: theme.spacing(0),
       marginRight: theme.spacing(0),

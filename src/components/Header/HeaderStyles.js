@@ -9,6 +9,11 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     width: "100%",
   },
+  toolBar: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
   title: {
     fontWeight: 600,
     color: theme.palette.common.black,
