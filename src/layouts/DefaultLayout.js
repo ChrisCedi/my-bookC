@@ -8,7 +8,7 @@ export const DefaultLayout = ({ children }) => {
 
   return (
     <div>
-      <Header />
+      <Header inNotFound={true} />
       <div className={classes.body}>{children}</div>
       <div className={classes.footer}>
         <Footer />

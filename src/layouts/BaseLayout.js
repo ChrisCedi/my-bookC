@@ -9,7 +9,7 @@ export const BaseLayout = ({ children }) => {
 
   return (
     <div>
-      <Header />
+      <Header inNotFound={false} />
       <div className={classes.body}>{children}</div>
       <Footer />
     </div>
