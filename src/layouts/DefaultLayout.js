@@ -1,13 +1,18 @@
 import React from "react";
-import { Container } from "@material-ui/core";
 import { useStyles } from "./BaseLayoutStyles";
+import { Header } from "../components/Header/Header";
+import { Footer } from "../components/Footer/Footer";
 
 export const DefaultLayout = ({ children }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.containerDefault}>
-      <Container>{children}</Container>
+    <div>
+      <Header inNotFound={true} />
+      <div className={classes.body}>{children}</div>
+      <div className={classes.footer}>
+        <Footer />
+      </div>
     </div>
   );
 };
