@@ -17,8 +17,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   developer: {
-    width: "100%",
-    height: "100%",
+    width: "90%",
+    height: "40%",
     paddingTop: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
       paddingTop: theme.spacing(2),
@@ -58,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
 
   motionImage: {
     width: "100%",
-    height: "100%",
   },
   myInformation: {
     backgroundColor: theme.palette.background.primary,

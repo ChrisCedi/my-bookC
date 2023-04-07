@@ -7,7 +7,12 @@ export const Footer = () => {
 
   return (
     <div className={classes.footer}>
-      <Typography>@ 2023 Christian Cedillo </Typography>
+      <Typography>
+        @ 2023 Christian Cedillo /{" "}
+        <a href="https://storyset.com/magic" className={classes.link}>
+          Magic illustrations by Storyset
+        </a>
+      </Typography>
     </div>
   );
 };

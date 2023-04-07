@@ -32,13 +32,13 @@ export const MainSection = () => {
             Frontend Developer
           </Typography>
         </Box>
-        <Box>
+        {/* <Box>
           <img
             src={Images.presentationImage}
             alt="working"
             className={classes.image}
           />
-        </Box>
+        </Box> */}
         <IconButton
           onClick={() =>
             document.getElementById("aboutMe").scrollIntoView({

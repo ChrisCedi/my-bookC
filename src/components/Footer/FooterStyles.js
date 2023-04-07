@@ -12,6 +12,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     marginTop: theme.spacing(4),
   },
+  link: {
+    textDecoration: "none",
+    color: "black",
+  },
 }));
 
 export { useStyles };

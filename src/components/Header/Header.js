@@ -34,6 +34,7 @@ export const Header = ({ inNotFound }) => {
             </motion.div>
             <Box>
               <Button
+                className={classes.button}
                 onClick={() =>
                   document.getElementById("mainSection").scrollIntoView({
                     behavior: "smooth",
@@ -44,6 +45,7 @@ export const Header = ({ inNotFound }) => {
               </Button>
 
               <Button
+                className={classes.button}
                 onClick={() =>
                   document.getElementById("aboutMe").scrollIntoView({
                     behavior: "smooth",
@@ -54,6 +56,7 @@ export const Header = ({ inNotFound }) => {
               </Button>
 
               <Button
+                className={classes.button}
                 onClick={() =>
                   document.getElementById("MyProjects").scrollIntoView({
                     behavior: "smooth",
@@ -64,6 +67,7 @@ export const Header = ({ inNotFound }) => {
               </Button>
 
               <Button
+                className={classes.button}
                 onClick={() =>
                   document.getElementById("contact").scrollIntoView({
                     behavior: "smooth",

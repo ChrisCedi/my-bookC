@@ -7,11 +7,25 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: "center",
     paddingTop: theme.spacing(10),
+    textTransform: "upperCase",
     fontWeight: 600,
     textShadow: "2px 2px #000000",
   },
   gridForm: {
-    // backgroundColor: theme.palette.background.secondary,
+    display: "flex",
+    justifyContent: "center",
+  },
+  image: {
+    height: "100px",
+    width: "100px",
+    cursor: "pointer",
+  },
+  body: {
+    height: "60vh",
+    display: "flex",
+    alignItems: "center",
+  },
+  gridImage: {
     display: "flex",
     justifyContent: "center",
   },

@@ -14,6 +14,10 @@ const useStyles = makeStyles((theme) => ({
   gridForm: {
     backgroundColor: theme.palette.background.secondary,
   },
+  field: {
+    marginBottom: theme.spacing(2),
+    width: "300px",
+  },
 }));
 
 export { useStyles };

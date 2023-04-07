@@ -45,7 +45,11 @@ export const MyProjects = () => {
               >
                 <Typography>{item.nameProject}</Typography>
                 <Typography>{item.description}</Typography>
-                <Button variant="contained" color="primary">
+                <Button
+                  variant="contained"
+                  color="secondary"
+                  className={classes.button}
+                >
                   Ver más
                 </Button>
               </motion.div>
