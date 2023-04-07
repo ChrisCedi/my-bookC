@@ -23,10 +23,20 @@ const useStyles = makeStyles((theme) => ({
     width: "250px",
     borderRadius: 0,
   },
-  mainInfo: {
+  name: {
     textAlign: "center",
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    textTransform: "upperCase",
+    letterSpacing: theme.spacing(0.5),
+    [theme.breakpoints.down("sm")]: {
+      fontSize: theme.typography.h5.fontSize,
+    },
+  },
+  subtitle: {
+    textAlign: "center",
+    fontWeight: 600,
+    textTransform: "upperCase",
+    letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("sm")]: {
       fontSize: theme.typography.h5.fontSize,
     },

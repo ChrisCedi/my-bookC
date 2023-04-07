@@ -2,9 +2,11 @@ import { Typography, Toolbar, AppBar, Button, Box } from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./HeaderStyles";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
+  const navigate = useNavigate();
 
   return (
     <>
@@ -12,7 +14,7 @@ export const Header = ({ inNotFound }) => {
         <AppBar position="static" className={classes.container}>
           <Toolbar>
             <Typography variant="h5" className={classes.title}>
-              {`<BookC/>`}
+              Book C
             </Typography>
           </Toolbar>
         </AppBar>
@@ -29,7 +31,7 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                {`<BookC/>`}
+                Book C
               </Typography>
             </motion.div>
             <Box>
@@ -41,7 +43,7 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                Home
+                Inicio
               </Button>
 
               <Button
@@ -52,7 +54,7 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                About me
+                Sobre mí
               </Button>
 
               <Button
@@ -63,7 +65,7 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                My projects
+                mis proyectos
               </Button>
 
               <Button
@@ -74,7 +76,13 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                Contact
+                Contacto
+              </Button>
+              <Button
+                onClick={() => navigate("/not-found")}
+                className={classes.button}
+              >
+                404
               </Button>
             </Box>
           </Toolbar>

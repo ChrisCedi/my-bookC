@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     fontWeight: 600,
-    color: theme.palette.common.black,
+    color: theme.palette.common.white,
+    textTransform: "upperCase",
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h6.fontSize,
     },
@@ -25,6 +26,7 @@ const useStyles = makeStyles((theme) => ({
   button: {
     fontSize: theme.typography.subtitle1.fontSize,
     fontWeight: 600,
+    color: "white",
   },
 }));
 

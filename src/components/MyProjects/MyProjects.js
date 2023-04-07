@@ -22,7 +22,7 @@ export const MyProjects = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          My projects
+          mis proyectos
         </Typography>
         <Grid
           container
@@ -43,7 +43,9 @@ export const MyProjects = () => {
                 transition={{ type: "tween", stiffness: 300, damping: 1 }}
                 key={index}
               >
-                <Typography>{item.nameProject}</Typography>
+                <Typography variant="h5" className={classes.titleProject}>
+                  {item.nameProject}
+                </Typography>
                 <Typography>{item.description}</Typography>
                 <Button
                   variant="contained"

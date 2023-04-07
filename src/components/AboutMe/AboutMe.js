@@ -31,7 +31,7 @@ export const AboutMe = () => {
                     color="primary"
                     className={classes.title}
                   >
-                    About me
+                    Sobre mí
                   </Typography>
                 </span>
                 <Grid

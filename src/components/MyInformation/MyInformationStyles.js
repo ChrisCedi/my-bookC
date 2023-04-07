@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     backgroundColor: theme.palette.common.white,
     padding: theme.spacing(3),
+    borderRadius: 20,
   },
   cardInformationCv: {
     display: "flex",
@@ -30,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.common.white,
     padding: theme.spacing(3),
     marginBottom: theme.spacing(5),
+    borderRadius: 20,
   },
   cardCv: {
     padding: theme.spacing(2),
@@ -57,8 +59,10 @@ const useStyles = makeStyles((theme) => ({
   },
   titleSkills: {
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    textTransform: "upperCase",
+    letterSpacing: theme.spacing(1),
     textAlign: "center",
+    paddingBottom: theme.spacing(1),
   },
   subtitleCv: {
     textAlign: "center",
@@ -85,9 +89,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     borderRadius: 30,
-    paddingLeft: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
 
-    paddingRight: theme.spacing(2),
+    paddingRight: theme.spacing(4),
   },
 }));
 

@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     paddingTop: theme.spacing(10),
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    textTransform: "upperCase",
+    letterSpacing: theme.spacing(1),
   },
   containerCards: {
     paddingTop: theme.spacing(8),
@@ -27,11 +28,15 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
   },
+  titleProject: {
+    textTransform: "upperCase",
+    letterSpacing: "3px",
+  },
   button: {
     borderRadius: 30,
-    paddingLeft: theme.spacing(2),
-
-    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    fontWeight: 600,
   },
 }));
 
