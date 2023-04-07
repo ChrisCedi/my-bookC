@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h4.fontSize,
+    },
   },
   containerCards: {
     paddingTop: theme.spacing(8),

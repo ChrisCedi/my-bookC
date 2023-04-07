@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
     textTransform: "upperCase",
     fontWeight: 600,
     letterSpacing: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h4.fontSize,
+    },
   },
   gridForm: {
     display: "flex",

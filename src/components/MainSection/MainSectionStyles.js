@@ -2,15 +2,11 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "100vh",
+    height: "105vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-
-    [theme.breakpoints.down("xs")]: {
-      height: "105vh",
-    },
   },
   motionDiv: {
     display: "flex",

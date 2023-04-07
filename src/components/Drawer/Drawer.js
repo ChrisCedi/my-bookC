@@ -4,7 +4,7 @@ import { useStyles } from "./DrawerStyles";
 
 export const Drawer = ({ show, children }) => {
   const classes = useStyles();
-  const drawerClasses = { root: classes.root, paper: classes.container };
+  const drawerClasses = { paper: classes.container };
 
   return (
     <MaterialDrawer anchor="right" open={show} classes={drawerClasses}>

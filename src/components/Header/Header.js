@@ -2,22 +2,20 @@ import {
   Typography,
   Toolbar,
   AppBar,
-  Button,
-  Box,
   IconButton,
+  Box,
 } from "@material-ui/core";
 import React, { useState } from "react";
 import { useStyles } from "./HeaderStyles";
 import { motion } from "framer-motion";
-import { useNavigate } from "react-router";
 import Hidden from "@material-ui/core/Hidden";
 import MenuIcon from "@material-ui/icons/Menu";
 import { Drawer } from "../Drawer/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
+import RutesHeader from "../RutesHeader/RutesHeader";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
-  const navigate = useNavigate();
   const [show, setShow] = useState(false);
 
   return (
@@ -47,66 +45,21 @@ export const Header = ({ inNotFound }) => {
               </Typography>
             </motion.div>
             <Hidden smDown>
-              <Box>
-                <Button
-                  className={classes.button}
-                  onClick={() =>
-                    document.getElementById("mainSection").scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                >
-                  Inicio
-                </Button>
-
-                <Button
-                  className={classes.button}
-                  onClick={() =>
-                    document.getElementById("aboutMe").scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                >
-                  Sobre mí
-                </Button>
-
-                <Button
-                  className={classes.button}
-                  onClick={() =>
-                    document.getElementById("MyProjects").scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                >
-                  mis proyectos
-                </Button>
-
-                <Button
-                  className={classes.button}
-                  onClick={() =>
-                    document.getElementById("contact").scrollIntoView({
-                      behavior: "smooth",
-                    })
-                  }
-                >
-                  Contacto
-                </Button>
-                <Button
-                  onClick={() => navigate("/not-found")}
-                  className={classes.button}
-                >
-                  404
-                </Button>
-              </Box>
+              <RutesHeader />
             </Hidden>
             <Hidden smUp>
               <IconButton onClick={() => setShow(!show)}>
-                <MenuIcon color="" />
+                <MenuIcon className={classes.menuIcon} />
               </IconButton>
               <Drawer show={show}>
-                <IconButton onClick={() => setShow(!show)}>
-                  <CloseIcon color="primary" />
-                </IconButton>
+                <>
+                  <Box width="100%">
+                    <IconButton onClick={() => setShow(!show)}>
+                      <CloseIcon color="primary" />
+                    </IconButton>
+                  </Box>
+                  <RutesHeader setShow={setShow} />
+                </>
               </Drawer>
             </Hidden>
           </Toolbar>

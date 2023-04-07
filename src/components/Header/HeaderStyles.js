@@ -9,6 +9,9 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(3),
     position: "fixed",
     width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      paddingTop: theme.spacing(2),
+    },
   },
   toolBar: {
     display: "flex",
@@ -28,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: "white",
     // marginLeft: theme.spacing(2),
+  },
+  menuIcon: {
+    color: theme.palette.common.white,
   },
 }));
 
