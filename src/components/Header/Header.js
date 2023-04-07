@@ -6,16 +6,19 @@ import {
   Box,
   IconButton,
 } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 import { useStyles } from "./HeaderStyles";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
 import Hidden from "@material-ui/core/Hidden";
 import MenuIcon from "@material-ui/icons/Menu";
+import { Drawer } from "../Drawer/Drawer";
+import CloseIcon from "@material-ui/icons/Close";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
   const navigate = useNavigate();
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -97,9 +100,14 @@ export const Header = ({ inNotFound }) => {
               </Box>
             </Hidden>
             <Hidden smUp>
-              <IconButton>
+              <IconButton onClick={() => setShow(!show)}>
                 <MenuIcon color="" />
               </IconButton>
+              <Drawer show={show}>
+                <IconButton onClick={() => setShow(!show)}>
+                  <CloseIcon color="primary" />
+                </IconButton>
+              </Drawer>
             </Hidden>
           </Toolbar>
         </AppBar>
