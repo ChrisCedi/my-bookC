@@ -1,8 +1,17 @@
-import { Typography, Toolbar, AppBar, Button, Box } from "@material-ui/core";
+import {
+  Typography,
+  Toolbar,
+  AppBar,
+  Button,
+  Box,
+  IconButton,
+} from "@material-ui/core";
 import React from "react";
 import { useStyles } from "./HeaderStyles";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router";
+import Hidden from "@material-ui/core/Hidden";
+import MenuIcon from "@material-ui/icons/Menu";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
@@ -34,57 +43,64 @@ export const Header = ({ inNotFound }) => {
                 Book C
               </Typography>
             </motion.div>
-            <Box>
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("mainSection").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Inicio
-              </Button>
+            <Hidden smDown>
+              <Box>
+                <Button
+                  className={classes.button}
+                  onClick={() =>
+                    document.getElementById("mainSection").scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  Inicio
+                </Button>
 
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("aboutMe").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Sobre mí
-              </Button>
+                <Button
+                  className={classes.button}
+                  onClick={() =>
+                    document.getElementById("aboutMe").scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  Sobre mí
+                </Button>
 
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("MyProjects").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                mis proyectos
-              </Button>
+                <Button
+                  className={classes.button}
+                  onClick={() =>
+                    document.getElementById("MyProjects").scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  mis proyectos
+                </Button>
 
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("contact").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Contacto
-              </Button>
-              <Button
-                onClick={() => navigate("/not-found")}
-                className={classes.button}
-              >
-                404
-              </Button>
-            </Box>
+                <Button
+                  className={classes.button}
+                  onClick={() =>
+                    document.getElementById("contact").scrollIntoView({
+                      behavior: "smooth",
+                    })
+                  }
+                >
+                  Contacto
+                </Button>
+                <Button
+                  onClick={() => navigate("/not-found")}
+                  className={classes.button}
+                >
+                  404
+                </Button>
+              </Box>
+            </Hidden>
+            <Hidden smUp>
+              <IconButton>
+                <MenuIcon color="" />
+              </IconButton>
+            </Hidden>
           </Toolbar>
         </AppBar>
       )}

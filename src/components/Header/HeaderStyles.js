@@ -27,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.subtitle1.fontSize,
     fontWeight: 600,
     color: "white",
+    // marginLeft: theme.spacing(2),
   },
 }));
 

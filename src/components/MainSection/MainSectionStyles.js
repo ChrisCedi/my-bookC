@@ -7,7 +7,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
-    backgroundColor: "red",
+
     [theme.breakpoints.down("xs")]: {
       height: "105vh",
     },
