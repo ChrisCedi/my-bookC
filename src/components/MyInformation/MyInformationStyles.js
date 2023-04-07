@@ -83,6 +83,12 @@ const useStyles = makeStyles((theme) => ({
       height: "200px",
     },
   },
+  button: {
+    borderRadius: 30,
+    paddingLeft: theme.spacing(2),
+
+    paddingRight: theme.spacing(2),
+  },
 }));
 
 export { useStyles };

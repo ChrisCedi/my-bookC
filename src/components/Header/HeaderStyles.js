@@ -3,6 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: theme.palette.primary.main,
+
     height: "60px",
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),
@@ -20,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h6.fontSize,
     },
+  },
+  button: {
+    fontSize: theme.typography.subtitle1.fontSize,
+    fontWeight: 600,
   },
 }));
 

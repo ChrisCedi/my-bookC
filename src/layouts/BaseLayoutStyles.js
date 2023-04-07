@@ -1,5 +1,4 @@
 import { makeStyles } from "@material-ui/core";
-import { Images } from "../assets/Images";
 
 const useStyles = makeStyles((theme) => ({
   body: {

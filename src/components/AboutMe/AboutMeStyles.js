@@ -8,9 +8,17 @@ const useStyles = makeStyles((theme) => ({
       height: "100%",
     },
   },
+  gridText: {
+    paddingLeft: theme.spacing(7),
+    paddingRight: theme.spacing(7),
+    [theme.breakpoints.down("xs")]: {
+      paddingLeft: theme.spacing(2),
+      paddingRight: theme.spacing(2),
+    },
+  },
   developer: {
-    width: "100%",
-    height: "100%",
+    width: "90%",
+    height: "40%",
     paddingTop: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
       paddingTop: theme.spacing(2),
@@ -25,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
   information: {
     paddingTop: theme.spacing(1),
     paddingBottom: theme.spacing(1),
-    textAlign: "center",
+    textAlign: "justify",
   },
   gridInfo: {
     display: "flex",
@@ -50,7 +58,6 @@ const useStyles = makeStyles((theme) => ({
 
   motionImage: {
     width: "100%",
-    height: "100%",
   },
   myInformation: {
     backgroundColor: theme.palette.background.primary,

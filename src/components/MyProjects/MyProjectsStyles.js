@@ -27,6 +27,12 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
   },
+  button: {
+    borderRadius: 30,
+    paddingLeft: theme.spacing(2),
+
+    paddingRight: theme.spacing(2),
+  },
 }));
 
 export { useStyles };

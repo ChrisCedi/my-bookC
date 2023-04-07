@@ -3,7 +3,6 @@ import { BaseLayout } from "../layouts/BaseLayout";
 import { SplashScreen } from "../components/SplashScreen/SplashScreen";
 import { DefaultLayout } from "../layouts/DefaultLayout";
 import { Error404 } from "../views/Error404/Error404";
-import { Navigate } from "react-router-dom";
 
 const routes = [
   {

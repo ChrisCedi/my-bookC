@@ -7,6 +7,10 @@ import presentationImage from "./Files/presentationImage.svg";
 import dog from "./Files/dog.svg";
 import profileData from "./Files/profileData.svg";
 import code from "./Files/code.svg";
+import github from "./Files/github.png";
+import email from "./Files/email.png";
+import telefono from "./Files/telefono.png";
+import whatsapp from "./Files/whatsapp.png";
 
 export const Images = {
   profile1,
@@ -18,4 +22,8 @@ export const Images = {
   dog,
   profileData,
   code,
+  github,
+  email,
+  telefono,
+  whatsapp,
 };

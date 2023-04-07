@@ -158,6 +158,7 @@ export const MyInformation = () => {
                         variant="contained"
                         style={{ fontWeight: 700 }}
                         endIcon={<InsertDriveFileIcon />}
+                        className={classes.button}
                       >
                         Descargar CV
                       </Button>
