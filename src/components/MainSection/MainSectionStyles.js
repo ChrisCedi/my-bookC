@@ -7,6 +7,10 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
+    backgroundColor: "red",
+    [theme.breakpoints.down("xs")]: {
+      height: "105vh",
+    },
   },
   motionDiv: {
     display: "flex",
@@ -25,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
   name: {
     textAlign: "center",
-    fontWeight: 600,
+    fontWeight: 700,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("sm")]: {

@@ -1,8 +1,7 @@
 import React from "react";
-import Slider from "react-slick";
 import { useStyles } from "./CarouselStyles";
-import { Box } from "@material-ui/core";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Images } from "../../assets/Images";
 
 // Import Swiper styles
 import "swiper/css";
@@ -40,70 +39,65 @@ export const Carousel = () => {
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/800px-React.svg.png"
+          src={Images.reactIcon}
           alt="react"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://d2vqpl3tx84ay5.cloudfront.net/500x/tumblr_lsus01g1ik1qies3uo1_400.png"
+          src={Images.javascriptIcon}
           alt="js"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
-        <img
-          className={classes.imageSlider}
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/1200px-HTML5_Badge.svg.png"
-          alt="html"
-        />
+        <img className={classes.imageSlider} src={Images.htmlIcon} alt="html" />
+      </SwiperSlide>
+      <SwiperSlide className={classes.sliderImage}>
+        <img className={classes.imageSlider} src={Images.cssIcon} alt="css" />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://logospng.org/download/css-3/logo-css-3-1536.png"
-          alt="css"
-        />
-      </SwiperSlide>
-      <SwiperSlide className={classes.sliderImage}>
-        <img
-          className={classes.imageSlider}
-          src="https://raw.githubusercontent.com/reduxjs/redux/master/logo/logo.png"
+          src={Images.reduxIcon}
           alt="redux"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://images.opencollective.com/formik/7ba0331/logo/256.png"
+          src={Images.formikIcon}
           alt="formik"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://v4.mui.com/static/logo.png"
+          src={Images.materialIcon}
           alt="material"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/1200px-Bootstrap_logo.svg.png"
+          src={Images.bootstrapIcon}
           alt="booststrap"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg"
+          src={Images.typescriptIcon}
           alt="ts"
         />
       </SwiperSlide>
       <SwiperSlide className={classes.sliderImage}>
+        <img className={classes.imageSlider} src={Images.gitIcon} alt="git" />
+      </SwiperSlide>
+      <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png"
+          src={Images.githubIcon}
           alt="github"
         />
       </SwiperSlide>
