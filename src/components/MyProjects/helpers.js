@@ -51,6 +51,20 @@ export const projects = [
       Images.framerIcon,
     ],
   },
+  {
+    nameProject: "Hi photos",
+    description:
+      "Hi potos es una red social que permite publicar fotos he interactuar con el contenido de tus amigos en tiempo real, actualmente sigue en desarrollo.",
+    github: "https://github.com/ChrisCedi/hi-photos",
+    tools: [
+      Images.reactIcon,
+      Images.javascriptIcon,
+      Images.materialIcon,
+      Images.graphqlIcon,
+      Images.formikIcon,
+      Images.jsonwebtokenIcon,
+    ],
+  },
 ];
 
 export const octopyProjects = [

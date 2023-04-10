@@ -25,6 +25,8 @@ import formikIcon from "./Files/formik-icon.png";
 import firebaseIcon from "./Files/firebase-icon.png";
 import gatsbyIcon from "./Files/gatsby-icon.png";
 import framerIcon from "./Files/framer-icon.svg";
+import graphqlIcon from "./Files/graphql-icon.png";
+import jsonwebtokenIcon from "./Files/jsonwebtoken-icon.png";
 
 export const Images = {
   profile1,
@@ -54,4 +56,6 @@ export const Images = {
   firebaseIcon,
   gatsbyIcon,
   framerIcon,
+  graphqlIcon,
+  jsonwebtokenIcon,
 };
