@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
-      color: theme.palette.secondary.main,
+      color: theme.palette.primary.main,
+      fontSize: 20,
     },
   },
 }));

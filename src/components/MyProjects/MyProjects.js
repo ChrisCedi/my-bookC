@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useStyles } from "./MyProjectsStyles";
 import { useInView, motion } from "framer-motion";
 import { Typography, Grid, Button, Container } from "@material-ui/core";
-import { projects } from "./helpers";
+import { octopyProjects } from "./helpers";
 
 export const MyProjects = () => {
   const classes = useStyles();
@@ -35,7 +35,7 @@ export const MyProjects = () => {
             transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
           }}
         >
-          {projects.map((item, index) => (
+          {/* {projects.map((item, index) => (
             <Grid item xs={12} sm={6}>
               <motion.div
                 className={classes.cardProject}
@@ -54,6 +54,35 @@ export const MyProjects = () => {
                 >
                   Ver más
                 </Button>
+              </motion.div>
+            </Grid>
+          ))} */}
+          {octopyProjects.map((item, index) => (
+            <Grid item xs={12} sm={6}>
+              <motion.div
+                className={classes.cardProject}
+                whileHover={{ scale: 1.1 }}
+                transition={{ type: "tween", stiffness: 300, damping: 1 }}
+                key={index}
+              >
+                <Grid className={classes.information}>
+                  <Typography variant="h5" className={classes.titleProject}>
+                    {item.nameProject}
+                  </Typography>
+                  <Typography className={classes.descriptionProject}>
+                    {item.description}
+                  </Typography>
+                </Grid>
+                <a href={`${item.link}`} className={classes.textButton}>
+                  <Button
+                    size="small"
+                    variant="contained"
+                    color="secondary"
+                    className={classes.button}
+                  >
+                    Visitar proyecto
+                  </Button>
+                </a>
               </motion.div>
             </Grid>
           ))}
