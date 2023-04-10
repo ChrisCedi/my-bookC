@@ -27,7 +27,7 @@ export const Error404 = () => {
         className={classes.button}
         onClick={() => navigate("/home")}
       >
-        Volver a Home
+        Volver a inicio
       </Button>
     </div>
   );

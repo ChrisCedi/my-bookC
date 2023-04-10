@@ -9,7 +9,10 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(10),
     textTransform: "upperCase",
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    letterSpacing: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h4.fontSize,
+    },
   },
   gridForm: {
     display: "flex",

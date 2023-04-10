@@ -21,24 +21,17 @@ export const MainSection = () => {
         className={classes.motionDiv}
       >
         <Box>
-          <Typography variant="h2" color="primary" className={classes.mainInfo}>
+          <Typography variant="h2" color="primary" className={classes.name}>
             Christian Cedillo
           </Typography>
           <Typography
-            variant="h2"
+            variant="h4"
             color="secondary"
-            className={classes.mainInfo}
+            className={classes.subtitle}
           >
             Frontend Developer
           </Typography>
         </Box>
-        {/* <Box>
-          <img
-            src={Images.presentationImage}
-            alt="working"
-            className={classes.image}
-          />
-        </Box> */}
         <IconButton
           onClick={() =>
             document.getElementById("aboutMe").scrollIntoView({

@@ -1,10 +1,22 @@
-import { Typography, Toolbar, AppBar, Button, Box } from "@material-ui/core";
-import React from "react";
+import {
+  Typography,
+  Toolbar,
+  AppBar,
+  IconButton,
+  Box,
+} from "@material-ui/core";
+import React, { useState } from "react";
 import { useStyles } from "./HeaderStyles";
 import { motion } from "framer-motion";
+import Hidden from "@material-ui/core/Hidden";
+import MenuIcon from "@material-ui/icons/Menu";
+import { Drawer } from "../Drawer/Drawer";
+import CloseIcon from "@material-ui/icons/Close";
+import RutesHeader from "../RutesHeader/RutesHeader";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -12,7 +24,7 @@ export const Header = ({ inNotFound }) => {
         <AppBar position="static" className={classes.container}>
           <Toolbar>
             <Typography variant="h5" className={classes.title}>
-              {`<BookC/>`}
+              Book C
             </Typography>
           </Toolbar>
         </AppBar>
@@ -29,54 +41,27 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                {`<BookC/>`}
+                Book C
               </Typography>
             </motion.div>
-            <Box>
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("mainSection").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Home
-              </Button>
-
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("aboutMe").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                About me
-              </Button>
-
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("MyProjects").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                My projects
-              </Button>
-
-              <Button
-                className={classes.button}
-                onClick={() =>
-                  document.getElementById("contact").scrollIntoView({
-                    behavior: "smooth",
-                  })
-                }
-              >
-                Contact
-              </Button>
-            </Box>
+            <Hidden smDown>
+              <RutesHeader />
+            </Hidden>
+            <Hidden smUp>
+              <IconButton onClick={() => setShow(!show)}>
+                <MenuIcon className={classes.menuIcon} />
+              </IconButton>
+              <Drawer show={show}>
+                <>
+                  <Box width="100%">
+                    <IconButton onClick={() => setShow(!show)}>
+                      <CloseIcon color="primary" />
+                    </IconButton>
+                  </Box>
+                  <RutesHeader setShow={setShow} />
+                </>
+              </Drawer>
+            </Hidden>
           </Toolbar>
         </AppBar>
       )}

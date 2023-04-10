@@ -28,7 +28,11 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(10),
     paddingBottom: theme.spacing(2),
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    letterSpacing: theme.spacing(1),
+    textTransform: "upperCase",
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h4.fontSize,
+    },
   },
   information: {
     paddingTop: theme.spacing(1),

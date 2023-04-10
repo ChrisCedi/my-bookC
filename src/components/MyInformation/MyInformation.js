@@ -26,7 +26,7 @@ export const MyInformation = () => {
               }}
             >
               <Typography
-                variant="h4"
+                variant="h5"
                 color="primary"
                 className={classes.titleSkills}
               >
@@ -89,7 +89,7 @@ export const MyInformation = () => {
                 }}
               >
                 <Typography
-                  variant="h4"
+                  variant="h5"
                   color="primary"
                   className={classes.titleSkills}
                 >
@@ -136,7 +136,7 @@ export const MyInformation = () => {
                 <Grid container className={classes.cardCv}>
                   <Grid item xs={12}>
                     <Typography
-                      variant="h4"
+                      variant="h5"
                       color="primary"
                       className={classes.titleSkills}
                     >

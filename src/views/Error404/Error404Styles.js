@@ -14,6 +14,11 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontWeight: 600,
+
+    paddingLeft: theme.spacing(3),
+    paddingRight: theme.spacing(3),
+
+    borderRadius: 20,
   },
 }));
 

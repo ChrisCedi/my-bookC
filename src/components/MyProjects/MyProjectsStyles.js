@@ -12,7 +12,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     paddingTop: theme.spacing(10),
     fontWeight: 600,
-    textShadow: "2px 2px #000000",
+    textTransform: "upperCase",
+    letterSpacing: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h4.fontSize,
+    },
   },
   containerCards: {
     paddingTop: theme.spacing(8),
@@ -21,17 +25,61 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
+    justifyContent: "space-between",
     padding: theme.spacing(2),
-    minHeight: "200px",
+    paddingLeft: theme.spacing(5),
+    paddingRight: theme.spacing(5),
+    minHeight: "230px",
     backgroundColor: theme.palette.background.primary,
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
   },
+  information: {
+    display: "flex",
+    alignItems: "center",
+    flexDirection: "column",
+  },
+  titleProject: {
+    textTransform: "upperCase",
+    letterSpacing: "3px",
+  },
+  descriptionProject: {
+    textAlign: "justify",
+    paddingTop: theme.spacing(1),
+  },
+  textButton: {
+    textDecoration: "none",
+  },
   button: {
     borderRadius: 30,
-    paddingLeft: theme.spacing(2),
-
-    paddingRight: theme.spacing(2),
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    fontWeight: 600,
+    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(2),
+  },
+  gridTools: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+  },
+  gridButtons: {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  },
+  avatar: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: theme.spacing(0.5),
+      marginRight: theme.spacing(0.5),
+      marginTop: theme.spacing(1),
+    },
   },
 }));
 

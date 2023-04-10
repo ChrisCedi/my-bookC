@@ -7,7 +7,7 @@ export const Footer = () => {
 
   return (
     <div className={classes.footer}>
-      <Typography>
+      <Typography className={classes.text}>
         @ 2023 Christian Cedillo /{" "}
         <a href="https://storyset.com/magic" className={classes.link}>
           Magic illustrations by Storyset
