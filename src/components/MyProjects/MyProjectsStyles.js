@@ -56,6 +56,30 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(4),
     fontWeight: 600,
     marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(2),
+  },
+  gridTools: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+  },
+  gridButtons: {
+    display: "flex",
+    justifyContent: "space-around",
+    width: "100%",
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  },
+  avatar: {
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      marginLeft: theme.spacing(0.5),
+      marginRight: theme.spacing(0.5),
+      marginTop: theme.spacing(1),
+    },
   },
 }));
 

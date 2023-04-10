@@ -22,6 +22,9 @@ import githubIcon from "./Files/github-icon.png";
 import reduxIcon from "./Files/redux-icon.png";
 import materialIcon from "./Files/material-icon.png";
 import formikIcon from "./Files/formik-icon.png";
+import firebaseIcon from "./Files/firebase-icon.png";
+import gatsbyIcon from "./Files/gatsby-icon.png";
+import framerIcon from "./Files/framer-icon.svg";
 
 export const Images = {
   profile1,
@@ -48,4 +51,7 @@ export const Images = {
   reduxIcon,
   materialIcon,
   formikIcon,
+  firebaseIcon,
+  gatsbyIcon,
+  framerIcon,
 };
