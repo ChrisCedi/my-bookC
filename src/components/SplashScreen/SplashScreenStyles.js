@@ -15,4 +15,12 @@ export const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
+  button: {
+    borderRadius: 30,
+    paddingLeft: theme.spacing(4),
+    paddingRight: theme.spacing(4),
+    fontWeight: 600,
+    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(2),
+  },
 }));

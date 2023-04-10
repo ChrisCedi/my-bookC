@@ -22,7 +22,7 @@ export const SplashScreen = () => {
         animate={{ x: "0vh" }}
         className={classes.hi}
       >
-        <Typography variant="h4">este es mi portafolio</Typography>
+        <Typography variant="h4">Bienvenido a mi portafolio</Typography>
       </motion.div>
       <motion.div
         className={classes.divButton}
@@ -32,7 +32,8 @@ export const SplashScreen = () => {
       >
         <Button
           variant="contained"
-          color="primary"
+          color="secondary"
+          className={classes.button}
           onClick={() => {
             navigate("/home");
           }}
