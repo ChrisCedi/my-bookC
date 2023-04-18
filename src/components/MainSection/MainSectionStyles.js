@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "105vh",
+    height: "102vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(0.5),
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h5.fontSize,
     },
   },
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(0.5),
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h5.fontSize,
     },
   },

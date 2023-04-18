@@ -24,19 +24,9 @@ export const MyProjects = () => {
         >
           mis proyectos
         </Typography>
-        <Grid
-          container
-          spacing={6}
-          className={classes.containerCards}
-          style={{
-            transform: isInVIew ? "none" : "translateX(-200px)",
-            animationDelay: 1,
-            opacity: isInVIew ? 1 : 0,
-            transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-          }}
-        >
+        <Grid container spacing={4} className={classes.containerCards}>
           {octopyProjects.map((item, index) => (
-            <Grid item sm={12} md={6}>
+            <Grid item sm={12} md={6} className={classes.gridCard}>
               <motion.div
                 className={classes.cardProject}
                 whileHover={{ scale: 1.1 }}
@@ -63,10 +53,9 @@ export const MyProjects = () => {
                 </Grid>
                 <a href={`${item.link}`} className={classes.textButton}>
                   <Button
-                    size="small"
                     variant="contained"
                     color="secondary"
-                    className={classes.button}
+                    className={classes.buttonProject}
                   >
                     Visitar proyecto
                   </Button>
@@ -76,7 +65,7 @@ export const MyProjects = () => {
           ))}
 
           {projects.map((item, index) => (
-            <Grid item sm={12} md={6}>
+            <Grid item sm={12} md={6} className={classes.gridCard}>
               <motion.div
                 className={classes.cardProject}
                 whileHover={{ scale: 1.1 }}
@@ -103,10 +92,9 @@ export const MyProjects = () => {
                   {item.link && (
                     <a href={`${item.link}`} className={classes.textButton}>
                       <Button
-                        size="small"
                         variant="contained"
                         color="secondary"
-                        className={classes.button}
+                        className={classes.buttonProject}
                       >
                         Visitar proyecto
                       </Button>
@@ -115,10 +103,9 @@ export const MyProjects = () => {
                   {item.github && (
                     <a href={`${item.github}`} className={classes.textButton}>
                       <Button
-                        size="small"
                         variant="contained"
                         color="primary"
-                        className={classes.button}
+                        className={classes.buttonProject}
                       >
                         Visitar repositorio
                       </Button>

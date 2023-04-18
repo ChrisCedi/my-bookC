@@ -5,7 +5,6 @@ import { Images } from "../../assets/Images";
 import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import { useInView } from "framer-motion";
-import { motion } from "framer-motion";
 
 export const MyInformation = () => {
   const classes = useStyles();
@@ -62,16 +61,11 @@ export const MyInformation = () => {
                   </Typography>
                 </Grid>
                 <Grid item xs={12} className={classes.gridSkills}>
-                  <motion.div
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "tween", stiffness: 400, damping: 10 }}
-                  >
-                    <img
-                      src={Images.code}
-                      alt="code"
-                      className={classes.imageSkills}
-                    />
-                  </motion.div>
+                  <img
+                    src={Images.code}
+                    alt="code"
+                    className={classes.imageSkills}
+                  />
                 </Grid>
               </Grid>
             </Grid>
@@ -97,20 +91,11 @@ export const MyInformation = () => {
                 </Typography>
                 <Grid container>
                   <Grid item xs={12} md={5} className={classes.gridSkills}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                      transition={{
-                        type: "tween",
-                        stiffness: 400,
-                        damping: 10,
-                      }}
-                    >
-                      <img
-                        src={Images.dog}
-                        alt="dog"
-                        className={classes.imageDog}
-                      />
-                    </motion.div>
+                    <img
+                      src={Images.dog}
+                      alt="dog"
+                      className={classes.imageDog}
+                    />
                   </Grid>
                   <Grid item xs={12} md={7} className={classes.gridSkills}>
                     <Typography variant="h6" className={classes.list}>
