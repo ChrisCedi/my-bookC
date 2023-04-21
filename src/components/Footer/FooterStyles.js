@@ -6,13 +6,12 @@ const useStyles = makeStyles((theme) => ({
     height: "100px",
     width: "100%",
     bottom: 0,
-
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    // marginTop: theme.spacing(4),
   },
   text: {
+    color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.caption.fontSize,
       textAlign: "center",
@@ -20,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: "black",
+    color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.caption.fontSize,
       textAlign: "center",

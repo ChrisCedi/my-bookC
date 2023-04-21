@@ -10,6 +10,9 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontSize: theme.typography.subtitle1.fontSize,
+    "&:hover": {
+      textDecoration: "underline overline",
+    },
     fontWeight: 600,
     color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {

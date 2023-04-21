@@ -15,7 +15,6 @@ export const Contact = () => {
       <Container>
         <Typography
           variant="h3"
-          color="primary"
           className={classes.title}
           style={{
             transform: isInVIew ? "none" : "translateX(-200px)",

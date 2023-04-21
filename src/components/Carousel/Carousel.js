@@ -19,7 +19,7 @@ export const Carousel = () => {
       effect={"coverflow"}
       grabCursor={true}
       autoplay={{
-        delay: 3000,
+        delay: 2000,
         disableOnInteraction: false,
       }}
       centeredSlides={true}

@@ -76,7 +76,7 @@ export const AboutMe = () => {
             >
               <img
                 // src={Images.developer}
-                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmU4ZTEwOTQ3ZjNkOTEzYWIwM2JjM2ZmMWQ3NGY0N2RmMjQ4MDI1OCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/26BGx7czp2pazBlUk/giphy.gif"
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODI2ZWE4NWMwOWFjYjZlZjViYzczMDMwMjAzNjM3ZmI5MGJkMDJkNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/l41YbnCbU9JUGdJ5u/giphy.gif"
                 alt="developer"
                 className={classes.developer}
               />

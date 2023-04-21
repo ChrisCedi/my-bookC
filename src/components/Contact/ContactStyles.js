@@ -1,13 +1,17 @@
 import { makeStyles } from "@material-ui/core";
-
+import { Images } from "../../assets/Images";
 const useStyles = makeStyles((theme) => ({
   container: {
     height: "100vh",
     backgroundColor: theme.palette.common.black,
-    clipPath: "polygon(0 100%, 100% 64%, 100% 100%, 0 100%)",
+    backgroundImage: `url(${Images.contactBackground})`,
+    backgroundSize: "contain",
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
   },
   title: {
     textAlign: "center",
+    color: theme.palette.common.white,
     paddingTop: theme.spacing(10),
     textTransform: "upperCase",
     fontWeight: 600,

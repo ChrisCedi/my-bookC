@@ -31,6 +31,7 @@ import axiosIcon from "./Files/axios-icon.png";
 import contextIcon from "./Files/context-icon.png";
 import nomad from "./Files/nomad.svg";
 import mainBackground from "./Files/main-background.gif";
+import contactBackground from "./Files/backgrounds/contact-background.gif";
 
 export const Images = {
   profile1,
@@ -66,4 +67,5 @@ export const Images = {
   contextIcon,
   nomad,
   mainBackground,
+  contactBackground,
 };
