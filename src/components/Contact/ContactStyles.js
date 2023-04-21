@@ -2,7 +2,9 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "80vh",
+    height: "100vh",
+    backgroundColor: theme.palette.common.black,
+    clipPath: "polygon(0 100%, 100% 64%, 100% 100%, 0 100%)",
   },
   title: {
     textAlign: "center",

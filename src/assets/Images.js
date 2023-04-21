@@ -20,7 +20,7 @@ import typescriptIcon from "./Files/typescript-icon.png";
 import gitIcon from "./Files/git-icon.png";
 import githubIcon from "./Files/github-icon.png";
 import reduxIcon from "./Files/redux-icon.png";
-import materialIcon from "./Files/material-icon.png";
+import materialIcon from "./Files/material-icon.svg";
 import formikIcon from "./Files/formik-icon.png";
 import firebaseIcon from "./Files/firebase-icon.png";
 import gatsbyIcon from "./Files/gatsby-icon.png";
@@ -30,6 +30,7 @@ import jsonwebtokenIcon from "./Files/jsonwebtoken-icon.png";
 import axiosIcon from "./Files/axios-icon.png";
 import contextIcon from "./Files/context-icon.png";
 import nomad from "./Files/nomad.svg";
+import mainBackground from "./Files/main-background.gif";
 
 export const Images = {
   profile1,
@@ -64,4 +65,5 @@ export const Images = {
   axiosIcon,
   contextIcon,
   nomad,
+  mainBackground,
 };

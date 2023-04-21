@@ -148,11 +148,6 @@ export const MyInformation = () => {
                         Descargar CV
                       </Button>
                     </a>
-                    <img
-                      src={Images.profileData}
-                      alt="profileDatasvg"
-                      className={classes.imageCv}
-                    />
                   </Grid>
                 </Grid>
               </Grid>

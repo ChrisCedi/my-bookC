@@ -4,7 +4,8 @@ const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
     height: "100%",
-
+    backgroundImage: `url(https://media1.giphy.com/media/1H8sdPP3JDAR5iY0Yv/giphy.gif?cid=ecf05e475f8va96k124qgum2tvo4y9gt1h93w947ayq9xab6&rid=giphy.gif&ct=g)`,
+    backgroundSize: "cover",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },

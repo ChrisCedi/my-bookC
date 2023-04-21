@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    marginTop: theme.spacing(4),
+    // marginTop: theme.spacing(4),
   },
   text: {
     [theme.breakpoints.down("xs")]: {

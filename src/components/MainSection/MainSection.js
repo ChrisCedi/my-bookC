@@ -24,7 +24,6 @@ export const MainSection = ({ width }) => {
             className={classes.nameP}
             style={{ fontWeight: 600, letterSpacing: 4 }}
             variant="h3"
-            // color="primary"
           >
             Christian Cedillo
           </Typography>
@@ -32,7 +31,6 @@ export const MainSection = ({ width }) => {
             className={classes.subtitleP}
             variant="h4"
             style={{ fontWeight: 600, letterSpacing: 4 }}
-            color="secondary"
           >
             Frontend Developer
           </Typography>

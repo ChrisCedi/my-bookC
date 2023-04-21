@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     display: "flex",
     alignItems: "center",
-    backgroundColor: theme.palette.background.primary,
+    // backgroundColor: theme.palette.background.primary,
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },
@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   developer: {
     width: "90%",
-    height: "40%",
+    height: "20%",
     paddingTop: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
       paddingTop: theme.spacing(2),
@@ -69,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   myInformation: {
-    backgroundColor: theme.palette.background.primary,
+    // backgroundColor: theme.palette.background.primary,
     height: "400px",
   },
 }));

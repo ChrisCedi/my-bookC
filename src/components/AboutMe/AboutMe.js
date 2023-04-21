@@ -63,7 +63,7 @@ export const AboutMe = () => {
                 </Grid>
               </Grid>
 
-              <Grid item xs={12}>
+              <Grid item xs={12} style={{ width: "80%" }}>
                 <Carousel />
               </Grid>
             </Grid>
@@ -75,7 +75,8 @@ export const AboutMe = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <img
-                src={Images.developer}
+                // src={Images.developer}
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmU4ZTEwOTQ3ZjNkOTEzYWIwM2JjM2ZmMWQ3NGY0N2RmMjQ4MDI1OCZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/26BGx7czp2pazBlUk/giphy.gif"
                 alt="developer"
                 className={classes.developer}
               />
