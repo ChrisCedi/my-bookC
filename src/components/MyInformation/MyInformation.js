@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useStyles } from "./MyInformationStyles";
 import { Typography, Grid, Container, Button } from "@material-ui/core";
 import { Images } from "../../assets/Images";
-import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
+import cv from "../../assets/Files/cv-ChristianCedillo.pdf";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import { useInView } from "framer-motion";
 
@@ -41,17 +41,17 @@ export const MyInformation = () => {
                     <li>Redux</li>
                     <li>Toolkit</li>
                     <li>Context Api</li>
-
                     <li>Material UI</li>
                     <li>Bootstrap</li>
+                    <li>HTML5</li>
                   </Typography>
                 </Grid>
                 <Grid item xs={6} md={6} className={classes.gridSkills}>
                   <Typography variant="h6" className={classes.list}>
-                    <li>HTML5</li>
-                    <li>Css</li>
-                    <li>Javascript</li>
+                    <li>Css3</li>
+                    <li>JavaScript</li>
                     <li>TypeScript</li>
+                    <li>EcmaScript 6</li>
                     <li>Semantic UI </li>
                     <li>Axios</li>
                     <li>Formik</li>
@@ -99,11 +99,11 @@ export const MyInformation = () => {
                   </Grid>
                   <Grid item xs={12} md={7} className={classes.gridSkills}>
                     <Typography variant="h6" className={classes.list}>
-                      <li>Escuchar música</li>
+                      <li>Pasear a mi perrito</li>
                       <li>Basketball</li>
-                      <li>Pasar tiempo con mi familia</li>
+                      <li>Aprender nuevas tecnologías</li>
                       <li>Tomar fotos</li>
-                      <li>Estar con mi perrito</li>
+                      <li>Viajar</li>
                     </Typography>
                   </Grid>
                 </Grid>
@@ -128,14 +128,14 @@ export const MyInformation = () => {
                       ¿Prefieres ver mi cv?
                     </Typography>
                     <Typography variant="h6" className={classes.subtitleCv}>
-                      Puedes descargar mi cv presionando el botón
+                      Puedes ver información más detallada en mi cv
                     </Typography>
                   </Grid>
                   <Grid item xs={12}></Grid>
                   <Grid item xs={12} className={classes.gridButtonCv}>
                     <a
                       href={cv}
-                      download="cv - Christian Cedillo"
+                      download="cv - Christian Javier Cedillo Palacios"
                       className={classes.textButton}
                     >
                       <Button

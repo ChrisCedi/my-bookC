@@ -4,7 +4,7 @@ export const projects = [
   {
     nameProject: "Catalogo de Marvel",
     description:
-      "Plataforma que ofrece múltiples servicios como lo es información general del museo, lo más nuevo, donaciones, tienda de productos y beneficios para todos aquellos clientes que decidan volverse miembros de MAM con beneficios exclusivos.",
+      "Aquí encontrarás detalles completos de todos los personajes de este emocionante universo, desde los más conocidos como Iron Man y Spider-Man hasta los más recientes y menos conocidos. En nuestra plataforma podrás explorar datos información de los personajes, sus apariciones en cómics, así como sus diferentes versiones. ",
     link: "https://cool-kangaroo-f27b08.netlify.app/",
     github: "https://github.com/ChrisCedi/marvel-catalog",
     tools: [
@@ -18,7 +18,7 @@ export const projects = [
   {
     nameProject: "CR Palace",
     description:
-      "CR Palace es una demo para la industria hotelera, su principal función es presentar información del hotel, los diferentes servicios con los que cuenta y contacto, servicios de iframes.",
+      "Bienvenidos a nuestra demo de CR Palace. Esta es una plataforma diseñada especialmente para que los hoteles puedan mostrar sus servicios, habitaciones y atractivos turísticos de una manera fácil y eficiente.",
     link: "https://vigilant-wing-9d6772.netlify.app/",
     tools: [
       Images.reactIcon,
@@ -30,7 +30,7 @@ export const projects = [
   {
     nameProject: "Administrador de pacientes",
     description:
-      "Plataforma sencilla para tener control de pacientes (mascotas) en el día a día, ayudando a identificar la razón por la cual los clientes llevaron a sus mascotas a consulta.",
+      "Esta página web está diseñada para facilitar la gestión de pacientes mascotas y su historial clínico. Es una herramienta esencial para los médicos veterinarios que buscan una manera fácil y efectiva de gestionar sus pacientes y tener mejor control con sus clientes. ",
     link: "https://stoic-wiles-76a71e.netlify.app/",
     tools: [
       Images.reactIcon,
@@ -42,7 +42,7 @@ export const projects = [
   {
     nameProject: "We are",
     description:
-      "We are es un proyecto realizado con fines académicos para mostrar una interfaz informativa para presentar a los integrantes del equipo y utilizar algún servicio de base de datos para colocar comentarios.",
+      "En esta plataforma se muestra la información de los desarrolladores de manera rápida y sencilla. Los usuarios pueden ver detalles como el nombre, la edad y gustos personales. Además, también se pueden añadir comentarios sobre la página. ",
     link: "https://bright-fox-9584e7.netlify.app/",
     github: "https://github.com/ChrisCedi/Whe-are",
     tools: [
@@ -56,7 +56,7 @@ export const projects = [
   {
     nameProject: "Book C",
     description:
-      "Book C es mi portafolio personal para presentar mis habilidades, gustos y las herramientas que manejo, además contiene información de los proyectos en los que he estado involucrado durante su desarrollo.",
+      "Pagina web personal con una presentación detallada de mi trabajo. Aquí podrán conocer mi portafolio, trayectoria, habilidades y herramientas. Contiene algunos proyectos que he desarrollado y  datos de contacto.",
     github: "https://github.com/ChrisCedi/my-bookC",
     tools: [
       Images.reactIcon,
@@ -68,7 +68,7 @@ export const projects = [
   {
     nameProject: "Hi photos",
     description:
-      "Hi potos es una red social que permite publicar fotos he interactuar con el contenido de tus amigos en tiempo real, actualmente sigue en desarrollo.",
+      "Hi photos es una red social que permite publicar fotos he interactuar con el contenido de tus amigos en tiempo real, actualmente sigue en desarrollo.",
     github: "https://github.com/ChrisCedi/hi-photos",
     tools: [
       Images.reactIcon,
@@ -85,7 +85,7 @@ export const octopyProjects = [
   {
     nameProject: "Museo de arte moderno",
     description:
-      "Plataforma que ofrece múltiples servicios como lo es información general del museo, lo más nuevo, donaciones, tienda de productos y beneficios para todos aquellos clientes que decidan volverse miembros de MAM con beneficios exclusivos.",
+      "Plataforma que ofrece múltiples servicios, como: información general del museo, lo más nuevo, donaciones, tienda de productos y beneficios exclusivos, para todos aquellos clientes que decidan volverse miembros de MAM.",
     link: "https://amigos-mam.com/",
     tools: [
       Images.reactIcon,
@@ -111,7 +111,7 @@ export const octopyProjects = [
   {
     nameProject: "Robot Pool",
     description:
-      "Dashboard de control, monitorización y visualización de las métricas y datos fundamentales de cada robot para hacer un seguimiento continuo y ayudar a tener una mejor gestión.",
+      "Esta plataforma está diseñada para ayudar a gestionar los robots registrados de manera más efectiva y eficiente. Con esta plataforma, los usuarios pueden acceder y controlar todos sus robots desde una sola interfaz. Los usuarios pueden monitorear el estado de los robots y métricas recopiladas.",
     link: "https://robot-pool.octopylabs.com/login",
     tools: [
       Images.reactIcon,

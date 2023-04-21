@@ -1,10 +1,17 @@
 import React, { useRef } from "react";
 import { useStyles } from "./MyProjectsStyles";
 import { useInView, motion } from "framer-motion";
-import { Typography, Grid, Button, Container, Avatar } from "@material-ui/core";
+import {
+  Typography,
+  Grid,
+  Button,
+  Container,
+  Avatar,
+  withWidth,
+} from "@material-ui/core";
 import { octopyProjects, projects } from "./helpers";
 
-export const MyProjects = () => {
+const MyProjects = ({ width }) => {
   const classes = useStyles();
   const ref = useRef(null);
   const isInVIew = useInView(ref, { once: true });
@@ -29,7 +36,7 @@ export const MyProjects = () => {
             <Grid item sm={12} md={6} className={classes.gridCard}>
               <motion.div
                 className={classes.cardProject}
-                whileHover={{ scale: 1.1 }}
+                whileHover={width === "xs" ? { scale: 1 } : { scale: 1.1 }}
                 transition={{ type: "tween", stiffness: 300, damping: 1 }}
                 key={index}
               >
@@ -57,7 +64,7 @@ export const MyProjects = () => {
                     color="secondary"
                     className={classes.buttonProject}
                   >
-                    Visitar proyecto
+                    Ver proyecto
                   </Button>
                 </a>
               </motion.div>
@@ -68,7 +75,7 @@ export const MyProjects = () => {
             <Grid item sm={12} md={6} className={classes.gridCard}>
               <motion.div
                 className={classes.cardProject}
-                whileHover={{ scale: 1.1 }}
+                whileHover={width === "xs" ? { scale: 1 } : { scale: 1.1 }}
                 transition={{ type: "tween", stiffness: 300, damping: 1 }}
                 key={index}
               >
@@ -96,7 +103,7 @@ export const MyProjects = () => {
                         color="secondary"
                         className={classes.buttonProject}
                       >
-                        Visitar proyecto
+                        Ver proyecto
                       </Button>
                     </a>
                   )}
@@ -107,7 +114,7 @@ export const MyProjects = () => {
                         color="primary"
                         className={classes.buttonProject}
                       >
-                        Visitar repositorio
+                        Ver repositorio
                       </Button>
                     </a>
                   )}
@@ -120,3 +127,5 @@ export const MyProjects = () => {
     </section>
   );
 };
+
+export default withWidth()(MyProjects);

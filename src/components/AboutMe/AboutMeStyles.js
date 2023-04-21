@@ -6,6 +6,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     display: "flex",
     alignItems: "center",
+    backgroundColor: theme.palette.background.primary,
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },

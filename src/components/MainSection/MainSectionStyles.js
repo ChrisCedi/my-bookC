@@ -18,11 +18,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "center",
   },
-  photo: {
-    height: "320px",
-    width: "250px",
-    borderRadius: 0,
-  },
+
   name: {
     textAlign: "center",
     fontWeight: 700,
@@ -43,10 +39,6 @@ const useStyles = makeStyles((theme) => ({
   },
   iconButton: {
     color: theme.palette.common.black,
-  },
-
-  image: {
-    height: "250px",
   },
 }));
 

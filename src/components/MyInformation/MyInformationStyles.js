@@ -3,7 +3,6 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
-    backgroundColor: theme.palette.background.secondary,
     height: "100%",
 
     [theme.breakpoints.down("sm")]: {
@@ -19,19 +18,21 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: theme.palette.background.primary,
     padding: theme.spacing(3),
     borderRadius: 20,
+    boxShadow: "0px 3px 6px #00000029",
   },
   cardInformationCv: {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: theme.palette.background.primary,
     padding: theme.spacing(3),
     marginBottom: theme.spacing(5),
     borderRadius: 20,
+    boxShadow: "0px 3px 6px #00000029",
   },
   cardCv: {
     padding: theme.spacing(2),

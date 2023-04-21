@@ -45,7 +45,7 @@ export const AboutMe = () => {
                 >
                   <Typography className={classes.information}>
                     Hola soy Christian Javier Cedillo Palacios, desarrollador
-                    front-end con Ract js
+                    front-end con React js
                   </Typography>
 
                   <Typography className={classes.information}>

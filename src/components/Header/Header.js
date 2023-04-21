@@ -13,6 +13,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { Drawer } from "../Drawer/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import RutesHeader from "../RutesHeader/RutesHeader";
+import { Images } from "../../assets/Images";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
@@ -24,7 +25,7 @@ export const Header = ({ inNotFound }) => {
         <AppBar position="static" className={classes.container}>
           <Toolbar>
             <Typography variant="h5" className={classes.title}>
-              Book C
+              Book c
             </Typography>
           </Toolbar>
         </AppBar>
@@ -41,7 +42,7 @@ export const Header = ({ inNotFound }) => {
                   })
                 }
               >
-                Book C
+                Book c
               </Typography>
             </motion.div>
             <Hidden smDown>
@@ -52,14 +53,20 @@ export const Header = ({ inNotFound }) => {
                 <MenuIcon className={classes.menuIcon} />
               </IconButton>
               <Drawer show={show}>
-                <>
-                  <Box width="100%">
-                    <IconButton onClick={() => setShow(!show)}>
-                      <CloseIcon color="primary" />
-                    </IconButton>
+                <Box className={classes.bodyDrawer}>
+                  <Box>
+                    <Box width="100%">
+                      <IconButton onClick={() => setShow(!show)}>
+                        <CloseIcon color="primary" />
+                      </IconButton>
+                    </Box>
+                    <RutesHeader setShow={setShow} />
                   </Box>
-                  <RutesHeader setShow={setShow} />
-                </>
+                  <Box>
+                    <img src={Images.nomad} alt="nomad" />
+                    <div className={classes.footerDrawer} />
+                  </Box>
+                </Box>
               </Drawer>
             </Hidden>
           </Toolbar>
