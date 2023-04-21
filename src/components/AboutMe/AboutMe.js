@@ -1,8 +1,6 @@
 import { Typography, Grid, Container } from "@material-ui/core";
 import React, { useRef } from "react";
 import { useStyles } from "./AboutMeStyles";
-import { Images } from "../../assets/Images";
-
 import { useInView, motion } from "framer-motion";
 import { Carousel } from "../Carousel/Carousel";
 

@@ -13,7 +13,6 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { Drawer } from "../Drawer/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
 import RutesHeader from "../RutesHeader/RutesHeader";
-import { Images } from "../../assets/Images";
 
 export const Header = ({ inNotFound }) => {
   const classes = useStyles();
@@ -57,14 +56,13 @@ export const Header = ({ inNotFound }) => {
                   <Box>
                     <Box width="100%">
                       <IconButton onClick={() => setShow(!show)}>
-                        <CloseIcon color="primary" />
+                        <CloseIcon
+                          fontSize="large"
+                          className={classes.closeIcon}
+                        />
                       </IconButton>
                     </Box>
                     <RutesHeader setShow={setShow} />
-                  </Box>
-                  <Box>
-                    <img src={Images.nomad} alt="nomad" />
-                    <div className={classes.footerDrawer} />
                   </Box>
                 </Box>
               </Drawer>

@@ -31,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.subtitle1.fontSize,
     fontWeight: 600,
     color: "white",
-    // marginLeft: theme.spacing(2),
   },
   menuIcon: {
     color: theme.palette.common.white,
@@ -47,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
     height: "50px",
     bottom: 0,
     width: "100%",
+  },
+  closeIcon: {
+    color: theme.palette.common.white,
   },
 }));
 
