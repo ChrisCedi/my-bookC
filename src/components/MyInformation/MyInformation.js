@@ -41,17 +41,17 @@ export const MyInformation = () => {
                     <li>Redux</li>
                     <li>Toolkit</li>
                     <li>Context Api</li>
-
                     <li>Material UI</li>
                     <li>Bootstrap</li>
+                    <li>HTML5</li>
                   </Typography>
                 </Grid>
                 <Grid item xs={6} md={6} className={classes.gridSkills}>
                   <Typography variant="h6" className={classes.list}>
-                    <li>HTML5</li>
                     <li>Css3</li>
-                    <li>Javascript</li>
+                    <li>JavaScript</li>
                     <li>TypeScript</li>
+                    <li>EcmaScript 6</li>
                     <li>Semantic UI </li>
                     <li>Axios</li>
                     <li>Formik</li>
@@ -128,7 +128,7 @@ export const MyInformation = () => {
                       ¿Prefieres ver mi cv?
                     </Typography>
                     <Typography variant="h6" className={classes.subtitleCv}>
-                      Puedes descargar mi cv presionando el botón
+                      Puedes ver información más detallada en mi cv
                     </Typography>
                   </Grid>
                   <Grid item xs={12}></Grid>

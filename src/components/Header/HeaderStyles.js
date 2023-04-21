@@ -35,6 +35,18 @@ const useStyles = makeStyles((theme) => ({
   menuIcon: {
     color: theme.palette.common.white,
   },
+  bodyDrawer: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-between",
+    height: "100%",
+  },
+  footerDrawer: {
+    backgroundColor: theme.palette.primary.main,
+    height: "50px",
+    bottom: 0,
+    width: "100%",
+  },
 }));
 
 export { useStyles };

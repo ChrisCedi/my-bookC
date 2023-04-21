@@ -29,6 +29,7 @@ import graphqlIcon from "./Files/graphql-icon.png";
 import jsonwebtokenIcon from "./Files/jsonwebtoken-icon.png";
 import axiosIcon from "./Files/axios-icon.png";
 import contextIcon from "./Files/context-icon.png";
+import nomad from "./Files/nomad.svg";
 
 export const Images = {
   profile1,
@@ -62,4 +63,5 @@ export const Images = {
   jsonwebtokenIcon,
   axiosIcon,
   contextIcon,
+  nomad,
 };
