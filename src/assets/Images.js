@@ -30,7 +30,7 @@ import jsonwebtokenIcon from "./Files/jsonwebtoken-icon.png";
 import axiosIcon from "./Files/axios-icon.png";
 import contextIcon from "./Files/context-icon.png";
 import nomad from "./Files/nomad.svg";
-import mainBackground from "./Files/main-background.gif";
+import mainBackground from "./Files/backgrounds/main-background.gif";
 import contactBackground from "./Files/backgrounds/contact-background.gif";
 
 export const Images = {

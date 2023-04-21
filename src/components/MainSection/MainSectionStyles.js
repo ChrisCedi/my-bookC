@@ -8,10 +8,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "column",
+    backgroundPosition: "right bottom",
     backgroundImage: `url(${Images.mainBackground})`,
     backgroundSize: "cover",
     backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
+    [theme.breakpoints.down("xs")]: {
+      backgroundPosition: "left bottom",
+    },
   },
   motionDiv: {
     display: "flex",

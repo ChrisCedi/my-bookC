@@ -4,6 +4,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     backgroundColor: theme.palette.common.black,
     height: "60px",
+
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),
     position: "fixed",
@@ -21,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: theme.palette.common.white,
     textTransform: "upperCase",
+    cursor: "pointer",
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h6.fontSize,
     },
