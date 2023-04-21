@@ -22,6 +22,10 @@ const useStyles = makeStyles((theme) => ({
     height: "100px",
     width: "100px",
     cursor: "pointer",
+    [theme.breakpoints.down("xs")]: {
+      height: "60px",
+      width: "60px",
+    },
   },
   body: {
     height: "60vh",
