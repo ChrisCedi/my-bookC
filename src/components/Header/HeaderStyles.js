@@ -2,8 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: theme.palette.primary.main,
-
+    backgroundColor: theme.palette.common.black,
     height: "60px",
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),

@@ -24,7 +24,7 @@ export const MainSection = ({ width }) => {
             className={classes.nameP}
             style={{ fontWeight: 600, letterSpacing: 4 }}
             variant="h3"
-            color="primary"
+            // color="primary"
           >
             Christian Cedillo
           </Typography>
