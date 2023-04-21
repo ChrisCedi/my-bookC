@@ -20,8 +20,8 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(6),
     marginRight: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
-      marginLeft: theme.spacing(0),
-      marginRight: theme.spacing(0),
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
     },
   },
   imageSlider: {

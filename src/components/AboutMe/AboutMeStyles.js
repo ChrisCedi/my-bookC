@@ -19,6 +19,14 @@ const useStyles = makeStyles((theme) => ({
       paddingRight: theme.spacing(2),
     },
   },
+  gridCarousel: {
+    paddingLeft: theme.spacing(7),
+    paddingRight: theme.spacing(7),
+    [theme.breakpoints.down("xs")]: {
+      paddingLeft: theme.spacing(1),
+      paddingRight: theme.spacing(1),
+    },
+  },
   developer: {
     width: "90%",
     height: "20%",

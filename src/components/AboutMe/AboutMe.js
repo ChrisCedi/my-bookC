@@ -63,7 +63,7 @@ export const AboutMe = () => {
                 </Grid>
               </Grid>
 
-              <Grid item xs={12} style={{ width: "80%" }}>
+              <Grid item xs={12} className={classes.gridCarousel}>
                 <Carousel />
               </Grid>
             </Grid>
