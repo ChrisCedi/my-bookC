@@ -57,7 +57,7 @@ export const MyProjects = () => {
                     color="secondary"
                     className={classes.buttonProject}
                   >
-                    Visitar proyecto
+                    Ver proyecto
                   </Button>
                 </a>
               </motion.div>
@@ -96,7 +96,7 @@ export const MyProjects = () => {
                         color="secondary"
                         className={classes.buttonProject}
                       >
-                        Visitar proyecto
+                        Ver proyecto
                       </Button>
                     </a>
                   )}
@@ -107,7 +107,7 @@ export const MyProjects = () => {
                         color="primary"
                         className={classes.buttonProject}
                       >
-                        Visitar repositorio
+                        Ver repositorio
                       </Button>
                     </a>
                   )}

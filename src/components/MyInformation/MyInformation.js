@@ -49,7 +49,7 @@ export const MyInformation = () => {
                 <Grid item xs={6} md={6} className={classes.gridSkills}>
                   <Typography variant="h6" className={classes.list}>
                     <li>HTML5</li>
-                    <li>Css</li>
+                    <li>Css3</li>
                     <li>Javascript</li>
                     <li>TypeScript</li>
                     <li>Semantic UI </li>
@@ -99,11 +99,11 @@ export const MyInformation = () => {
                   </Grid>
                   <Grid item xs={12} md={7} className={classes.gridSkills}>
                     <Typography variant="h6" className={classes.list}>
-                      <li>Escuchar música</li>
+                      <li>Pasear a mi perrito</li>
                       <li>Basketball</li>
-                      <li>Pasar tiempo con mi familia</li>
+                      <li>Aprender nuevas tecnologías</li>
                       <li>Tomar fotos</li>
-                      <li>Estar con mi perrito</li>
+                      <li>Viajar</li>
                     </Typography>
                   </Grid>
                 </Grid>

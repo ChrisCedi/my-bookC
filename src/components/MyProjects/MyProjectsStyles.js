@@ -1,4 +1,4 @@
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -57,7 +57,8 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
   },
   buttonProject: {
-    borderRadius: 20,
+    borderRadius: 25,
+    fontWeight: 600,
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2),
   },
