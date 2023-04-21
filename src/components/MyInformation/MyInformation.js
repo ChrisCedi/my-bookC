@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useStyles } from "./MyInformationStyles";
 import { Typography, Grid, Container, Button } from "@material-ui/core";
 import { Images } from "../../assets/Images";
-import cv from "../../assets/Files/cv-ChristianJavierCedilloPalacios.pdf";
+import cv from "../../assets/Files/cv-ChristianCedillo.pdf";
 import InsertDriveFileIcon from "@material-ui/icons/InsertDriveFile";
 import { useInView } from "framer-motion";
 
@@ -135,7 +135,7 @@ export const MyInformation = () => {
                   <Grid item xs={12} className={classes.gridButtonCv}>
                     <a
                       href={cv}
-                      download="cv - Christian Cedillo"
+                      download="cv - Christian Javier Cedillo Palacios"
                       className={classes.textButton}
                     >
                       <Button
