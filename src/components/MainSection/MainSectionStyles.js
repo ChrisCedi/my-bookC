@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "102vh",
+    height: "100vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
