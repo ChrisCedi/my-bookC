@@ -2,7 +2,7 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    height: "100vh",
+    height: "102vh",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -22,18 +22,16 @@ const useStyles = makeStyles((theme) => ({
   nameP: {
     textAlign: "center",
     textTransform: "upperCase",
-    letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("xs")]: {
-      fontSize: theme.typography.h5.fontSize,
+      fontSize: "25px",
     },
   },
   subtitleP: {
     textAlign: "center",
-    textTransform: "upperCase",
-    letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("xs")]: {
-      fontSize: theme.typography.h6.fontSize,
+      fontSize: "18px",
     },
+    textTransform: "upperCase",
   },
   iconButton: {
     color: theme.palette.common.black,

@@ -45,7 +45,7 @@ export const Header = ({ inNotFound }) => {
                 Book c
               </Typography>
             </motion.div>
-            <Hidden smDown>
+            <Hidden xsDown>
               <RutesHeader />
             </Hidden>
             <Hidden smUp>

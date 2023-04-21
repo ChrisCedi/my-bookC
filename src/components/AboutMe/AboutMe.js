@@ -11,9 +11,11 @@ export const AboutMe = () => {
   const ref = useRef(null);
   const isInVIew = useInView(ref, { once: true });
 
+  console.log(isInVIew);
+
   return (
-    <section id="aboutMe" className={classes.container} ref={ref}>
-      <Container>
+    <section id="aboutMe" className={classes.container}>
+      <Container ref={ref}>
         <Grid container className={classes.firstContainer}>
           <Grid item xs={12} md={7}>
             <Grid container className={classes.secondContainer}>
@@ -40,7 +42,7 @@ export const AboutMe = () => {
                     transform: isInVIew ? "none" : "translateX(-200px)",
                     opacity: isInVIew ? 1 : 0,
                     transition:
-                      "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.0s",
+                      "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.9s",
                   }}
                 >
                   <Typography className={classes.information}>
