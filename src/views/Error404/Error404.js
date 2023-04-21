@@ -25,7 +25,7 @@ export const Error404 = () => {
         variant="contained"
         color="secondary"
         className={classes.button}
-        onClick={() => navigate("/home")}
+        onClick={() => navigate("/")}
       >
         Volver a inicio
       </Button>

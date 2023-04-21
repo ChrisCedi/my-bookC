@@ -27,6 +27,8 @@ import gatsbyIcon from "./Files/gatsby-icon.png";
 import framerIcon from "./Files/framer-icon.svg";
 import graphqlIcon from "./Files/graphql-icon.png";
 import jsonwebtokenIcon from "./Files/jsonwebtoken-icon.png";
+import axiosIcon from "./Files/axios-icon.png";
+import contextIcon from "./Files/context-icon.png";
 
 export const Images = {
   profile1,
@@ -58,4 +60,6 @@ export const Images = {
   framerIcon,
   graphqlIcon,
   jsonwebtokenIcon,
+  axiosIcon,
+  contextIcon,
 };

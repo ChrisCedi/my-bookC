@@ -2,6 +2,20 @@ import { Images } from "../../assets/Images";
 
 export const projects = [
   {
+    nameProject: "Catalogo de Marvel",
+    description:
+      "Plataforma que ofrece múltiples servicios como lo es información general del museo, lo más nuevo, donaciones, tienda de productos y beneficios para todos aquellos clientes que decidan volverse miembros de MAM con beneficios exclusivos.",
+    link: "https://cool-kangaroo-f27b08.netlify.app/",
+    github: "https://github.com/ChrisCedi/marvel-catalog",
+    tools: [
+      Images.reactIcon,
+      Images.materialIcon,
+      Images.javascriptIcon,
+      Images.axiosIcon,
+      Images.contextIcon,
+    ],
+  },
+  {
     nameProject: "CR Palace",
     description:
       "CR Palace es una demo para la industria hotelera, su principal función es presentar información del hotel, los diferentes servicios con los que cuenta y contacto, servicios de iframes.",

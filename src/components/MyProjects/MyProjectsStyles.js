@@ -21,6 +21,10 @@ const useStyles = makeStyles((theme) => ({
   containerCards: {
     paddingTop: theme.spacing(8),
   },
+  gridCard: {
+    display: "flex",
+    justifyContent: "center",
+  },
   cardProject: {
     display: "flex",
     flexDirection: "column",
@@ -30,6 +34,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: theme.spacing(5),
     paddingRight: theme.spacing(5),
     minHeight: "230px",
+    width: "75%",
     backgroundColor: theme.palette.background.primary,
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
@@ -42,6 +47,7 @@ const useStyles = makeStyles((theme) => ({
   titleProject: {
     textTransform: "upperCase",
     letterSpacing: "3px",
+    textAlign: "center",
   },
   descriptionProject: {
     textAlign: "justify",
@@ -50,11 +56,8 @@ const useStyles = makeStyles((theme) => ({
   textButton: {
     textDecoration: "none",
   },
-  button: {
-    borderRadius: 30,
-    paddingLeft: theme.spacing(4),
-    paddingRight: theme.spacing(4),
-    fontWeight: 600,
+  buttonProject: {
+    borderRadius: 20,
     marginBottom: theme.spacing(2),
     marginTop: theme.spacing(2),
   },
@@ -62,6 +65,7 @@ const useStyles = makeStyles((theme) => ({
     width: "100%",
     display: "flex",
     justifyContent: "center",
+    flexWrap: "wrap",
   },
   gridButtons: {
     display: "flex",
