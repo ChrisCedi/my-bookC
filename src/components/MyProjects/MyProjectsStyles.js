@@ -4,6 +4,8 @@ const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
     height: "100%",
+    paddingBottom: theme.spacing(6),
+    backgroundColor: theme.palette.background.primary,
     [theme.breakpoints.down("xs")]: {
       height: "100%",
     },
@@ -35,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(5),
     minHeight: "230px",
     width: "75%",
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: theme.palette.common.white,
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
   },
