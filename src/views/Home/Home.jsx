@@ -1,5 +1,5 @@
 import React from "react";
-import { MainSection } from "../../components/MainSection/MainSection";
+import MainSection from "../../components/MainSection/MainSection";
 import { AboutMe } from "../../components/AboutMe/AboutMe";
 import MyProjects from "../../components/MyProjects/MyProjects";
 import { MyInformation } from "../../components/MyInformation/MyInformation";

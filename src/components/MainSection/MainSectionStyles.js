@@ -19,22 +19,20 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
 
-  name: {
+  nameP: {
     textAlign: "center",
-    fontWeight: 700,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h5.fontSize,
     },
   },
-  subtitle: {
+  subtitleP: {
     textAlign: "center",
-    fontWeight: 600,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(0.5),
     [theme.breakpoints.down("xs")]: {
-      fontSize: theme.typography.h5.fontSize,
+      fontSize: theme.typography.h6.fontSize,
     },
   },
   iconButton: {
