@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     zIndex: `${theme.zIndex.drawer} !important`,
   },
   container: {
-    backgroundColor: theme.palette.common.white,
+    backgroundColor: theme.palette.common.black,
     width: 478,
     maxWidth: "100%",
     paddingLeft: theme.spacing(2),

@@ -1,8 +1,6 @@
 import { Typography, Grid, Container } from "@material-ui/core";
 import React, { useRef } from "react";
 import { useStyles } from "./AboutMeStyles";
-import { Images } from "../../assets/Images";
-
 import { useInView, motion } from "framer-motion";
 import { Carousel } from "../Carousel/Carousel";
 
@@ -63,7 +61,7 @@ export const AboutMe = () => {
                 </Grid>
               </Grid>
 
-              <Grid item xs={12}>
+              <Grid item xs={12} className={classes.gridCarousel}>
                 <Carousel />
               </Grid>
             </Grid>
@@ -75,7 +73,8 @@ export const AboutMe = () => {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <img
-                src={Images.developer}
+                // src={Images.developer}
+                src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODI2ZWE4NWMwOWFjYjZlZjViYzczMDMwMjAzNjM3ZmI5MGJkMDJkNSZlcD12MV9pbnRlcm5hbF9naWZzX2dpZklkJmN0PWc/l41YbnCbU9JUGdJ5u/giphy.gif"
                 alt="developer"
                 className={classes.developer}
               />

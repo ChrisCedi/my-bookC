@@ -2,9 +2,9 @@ import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   container: {
-    backgroundColor: theme.palette.primary.main,
-
+    backgroundColor: theme.palette.common.black,
     height: "60px",
+
     paddingLeft: theme.spacing(3),
     paddingRight: theme.spacing(3),
     position: "fixed",
@@ -22,6 +22,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     color: theme.palette.common.white,
     textTransform: "upperCase",
+    cursor: "pointer",
     [theme.breakpoints.down("xs")]: {
       fontSize: theme.typography.h6.fontSize,
     },
@@ -30,7 +31,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: theme.typography.subtitle1.fontSize,
     fontWeight: 600,
     color: "white",
-    // marginLeft: theme.spacing(2),
   },
   menuIcon: {
     color: theme.palette.common.white,
@@ -46,6 +46,9 @@ const useStyles = makeStyles((theme) => ({
     height: "50px",
     bottom: 0,
     width: "100%",
+  },
+  closeIcon: {
+    color: theme.palette.common.white,
   },
 }));
 

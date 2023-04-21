@@ -4,25 +4,24 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     width: "100%",
-    backgroundColor: "red",
     height: "200px",
   },
   slider: {
-    height: "140px",
+    height: "100px",
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
   },
   sliderImage: {
     backgroundPposition: "center",
     backgroundSize: "cover",
-    width: "140px",
-    height: "140px",
+    width: "100px",
+    height: "100px",
 
     marginLeft: theme.spacing(6),
     marginRight: theme.spacing(6),
     [theme.breakpoints.down("xs")]: {
-      marginLeft: theme.spacing(0),
-      marginRight: theme.spacing(0),
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(2),
     },
   },
   imageSlider: {
