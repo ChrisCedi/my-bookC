@@ -1,7 +1,7 @@
 import React from "react";
 import { useStyles } from "./MainSectionStyles";
 import { motion } from "framer-motion";
-import { Typography, IconButton, Box, Container } from "@material-ui/core";
+import { Typography, IconButton, Container } from "@material-ui/core";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 export const MainSection = ({ width }) => {
