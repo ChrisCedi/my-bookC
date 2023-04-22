@@ -13,9 +13,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },
-    marginTop: theme.spacing(4),
-    paddingTop: theme.spacing(6),
-    paddingBottom: theme.spacing(6),
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
   },
 
   cardInformation: {
@@ -40,7 +39,10 @@ const useStyles = makeStyles((theme) => ({
     boxShadow: "0px 3px 6px #00000029",
   },
   cardCv: {
+    paddingTop: theme.spacing(6),
+    paddingBottom: theme.spacing(6),
     padding: theme.spacing(2),
+    backgroundColor: theme.palette.background.alternative,
   },
   imageCv: {
     width: "100%",
@@ -65,16 +67,18 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   titleSkills: {
-    color: theme.palette.common.white,
+    color: theme.palette.common.black,
     fontWeight: 600,
     textTransform: "upperCase",
-    letterSpacing: theme.spacing(1),
     textAlign: "center",
     paddingBottom: theme.spacing(1),
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h5.fontSize,
+    },
   },
   subtitleCv: {
     textAlign: "center",
-    color: theme.palette.common.white,
+    color: theme.palette.common.black,
     paddingTop: theme.spacing(2),
   },
   gridButtonCv: {
