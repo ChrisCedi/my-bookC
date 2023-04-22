@@ -10,7 +10,7 @@ const RutesHeader = ({ setShow, width }) => {
     document.getElementById(section).scrollIntoView({
       behavior: "smooth",
     });
-    setTimeout(() => setShow(false), 1000);
+    setTimeout(() => setShow(false), 800);
   };
 
   return (

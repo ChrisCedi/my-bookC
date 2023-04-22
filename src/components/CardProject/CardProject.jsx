@@ -27,7 +27,7 @@ const CardProject = ({ width, project }) => {
         {project.link && (
           <a href={`${project.link}`} className={classes.textButton}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="secondary"
               className={classes.buttonProject}
               style={{ borderRadius: 25, fontWeight: 600 }}
@@ -39,7 +39,7 @@ const CardProject = ({ width, project }) => {
         {project.github && (
           <a href={`${project.github}`} className={classes.textButton}>
             <Button
-              variant="contained"
+              variant="outlined"
               color="primary"
               className={classes.buttonProject}
               style={{ borderRadius: 25, fontWeight: 600 }}

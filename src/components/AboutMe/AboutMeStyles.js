@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     height: "100vh",
     display: "flex",
     alignItems: "center",
-    // backgroundColor: theme.palette.background.primary,
+    paddingBottom: theme.spacing(4),
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },
@@ -76,9 +76,19 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
-  myInformation: {
-    // backgroundColor: theme.palette.background.primary,
-    height: "400px",
+  phrase: {
+    height: "150px",
+    padding: theme.spacing(2),
+    backgroundColor: theme.palette.background.secondary,
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  phraseText: {
+    fontWeight: 600,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: theme.typography.h5.fontSize,
+    },
   },
 }));
 
