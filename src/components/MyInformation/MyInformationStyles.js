@@ -1,11 +1,15 @@
 import { makeStyles } from "@material-ui/core";
+import { Images } from "../../assets/Images";
 
 const useStyles = makeStyles((theme) => ({
   container: {
     width: "100%",
     height: "100%",
-    backgroundImage: `url(https://media1.giphy.com/media/1H8sdPP3JDAR5iY0Yv/giphy.gif?cid=ecf05e475f8va96k124qgum2tvo4y9gt1h93w947ayq9xab6&rid=giphy.gif&ct=g)`,
-    backgroundSize: "cover",
+    backgroundImage: `url(${Images.earth})`,
+    backgroundSize: "initial",
+    backgroundColor: theme.palette.common.black,
+    backgroundPosition: "bottom",
+    backgroundRepeat: "no-repeat",
     [theme.breakpoints.down("sm")]: {
       height: "100%",
     },
@@ -19,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: "rgba(240,240,240,.2)",
     padding: theme.spacing(3),
     borderRadius: 20,
     boxShadow: "0px 3px 6px #00000029",
@@ -29,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     flexDirection: "column",
     alignItems: "center",
-    backgroundColor: theme.palette.background.primary,
+    backgroundColor: "rgba(240,240,240,.2)",
     padding: theme.spacing(3),
     marginBottom: theme.spacing(5),
     borderRadius: 20,
@@ -55,11 +59,13 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: theme.spacing(2),
   },
   list: {
+    color: theme.palette.common.white,
     [theme.breakpoints.down("xs")]: {
       fontSize: "13px",
     },
   },
   titleSkills: {
+    color: theme.palette.common.white,
     fontWeight: 600,
     textTransform: "upperCase",
     letterSpacing: theme.spacing(1),
@@ -68,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitleCv: {
     textAlign: "center",
+    color: theme.palette.common.white,
     paddingTop: theme.spacing(2),
   },
   gridButtonCv: {

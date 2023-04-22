@@ -15,7 +15,7 @@ export const MyInformation = () => {
     <div className={classes.container}>
       <Container ref={ref}>
         <Grid container spacing={4}>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={6} lg={8}>
             <Grid
               className={classes.cardInformation}
               style={{
@@ -29,7 +29,7 @@ export const MyInformation = () => {
                 color="primary"
                 className={classes.titleSkills}
               >
-                Skills
+                hard Skills
               </Typography>
               <Grid container>
                 <Grid item xs={6} md={6} className={classes.gridSkills}>
@@ -60,54 +60,42 @@ export const MyInformation = () => {
                     <li>Gitlab</li>
                   </Typography>
                 </Grid>
-                <Grid item xs={12} className={classes.gridSkills}>
-                  <img
-                    src={Images.code}
-                    alt="code"
-                    className={classes.imageSkills}
-                  />
-                </Grid>
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Grid container>
-              <Grid
-                item
-                xs={12}
-                className={classes.cardInformationCv}
-                style={{
-                  transform: isInVIew ? "none" : "translateX(-200px)",
-                  opacity: isInVIew ? 1 : 0,
-                  transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
-                }}
+          <Grid item xs={12} md={6} lg={4}>
+            <Grid
+              item
+              xs={12}
+              className={classes.cardInformationCv}
+              style={{
+                transform: isInVIew ? "none" : "translateX(-200px)",
+                opacity: isInVIew ? 1 : 0,
+                transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s",
+              }}
+            >
+              <Typography
+                variant="h5"
+                color="primary"
+                className={classes.titleSkills}
               >
-                <Typography
-                  variant="h5"
-                  color="primary"
-                  className={classes.titleSkills}
-                >
-                  Hobbies
+                Soft Skills
+              </Typography>
+
+              <Grid className={classes.gridSkills}>
+                <Typography variant="h6" className={classes.list}>
+                  <li>Trabajo en equipo</li>
+                  <li>Comunicación</li>
+                  <li>Adaptación al cambio</li>
+                  <li>Creatividad</li>
+                  <li>Resolución de problemas</li>
+                  <li>Planificación</li>
                 </Typography>
-                <Grid container>
-                  <Grid item xs={12} md={5} className={classes.gridSkills}>
-                    <img
-                      src={Images.dog}
-                      alt="dog"
-                      className={classes.imageDog}
-                    />
-                  </Grid>
-                  <Grid item xs={12} md={7} className={classes.gridSkills}>
-                    <Typography variant="h6" className={classes.list}>
-                      <li>Pasear a mi perrito</li>
-                      <li>Basketball</li>
-                      <li>Aprender nuevas tecnologías</li>
-                      <li>Tomar fotos</li>
-                      <li>Viajar</li>
-                    </Typography>
-                  </Grid>
-                </Grid>
               </Grid>
+            </Grid>
+          </Grid>
+
+          {/* <Grid container>
               <Grid
                 item
                 xs={12}
@@ -151,8 +139,7 @@ export const MyInformation = () => {
                   </Grid>
                 </Grid>
               </Grid>
-            </Grid>
-          </Grid>
+            </Grid> */}
         </Grid>
       </Container>
     </div>

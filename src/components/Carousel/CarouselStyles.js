@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   slider: {
     height: "100px",
     paddingTop: theme.spacing(4),
-    paddingBottom: theme.spacing(4),
+    paddingBottom: theme.spacing(8),
   },
   sliderImage: {
     backgroundPposition: "center",

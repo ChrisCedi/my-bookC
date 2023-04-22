@@ -8,9 +8,15 @@ export const Footer = () => {
   return (
     <div className={classes.footer}>
       <Typography className={classes.text}>
-        @ 2023 Christian Cedillo /{" "}
-        <a href="https://storyset.com/magic" className={classes.link}>
-          Magic illustrations by Storyset
+        Diseñado y desarrollado por Christian Cedillo. @ 2023.
+      </Typography>
+      <Typography>
+        <a
+          href="https://www.flaticon.com/free-icons/react"
+          title="react icons"
+          className={classes.link}
+        >
+          Icons created by Kiranshastry - Flaticon
         </a>
       </Typography>
     </div>
