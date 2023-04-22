@@ -32,6 +32,7 @@ import contextIcon from "./Files/context-icon.png";
 import nomad from "./Files/nomad.svg";
 import mainBackground from "./Files/backgrounds/main-background.gif";
 import contactBackground from "./Files/backgrounds/contact-background.gif";
+import earth from "./Files/earth.jpg";
 
 export const Images = {
   profile1,
@@ -68,4 +69,5 @@ export const Images = {
   nomad,
   mainBackground,
   contactBackground,
+  earth,
 };
