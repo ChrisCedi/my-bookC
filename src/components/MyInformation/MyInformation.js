@@ -2,12 +2,14 @@ import React, { useRef } from "react";
 import { useStyles } from "./MyInformationStyles";
 import { Typography, Grid, Container, Button } from "@material-ui/core";
 import cv from "../../assets/Files/cv-ChristianCedillo.pdf";
-import { useInView } from "framer-motion";
+import { useInView, motion } from "framer-motion";
 
 export const MyInformation = () => {
   const classes = useStyles();
   const ref = useRef(null);
+  const cvRef = useRef(null);
   const isInVIew = useInView(ref, { once: true });
+  const isInCv = useInView(cvRef, { once: true });
 
   return (
     <>
@@ -38,11 +40,13 @@ export const MyInformation = () => {
                       <li>Hooks</li>
                       <li>Custom Hoks</li>
                       <li>Redux</li>
-                      <li>Toolkit</li>
+                      <li>Redux Toolkit</li>
                       <li>Context Api</li>
                       <li>Material UI</li>
                       <li>Bootstrap</li>
+                      <li>Styled components</li>
                       <li>HTML5</li>
+                      <li>Postman</li>
                     </Typography>
                   </Grid>
                   <Grid item xs={6} md={6} className={classes.gridSkills}>
@@ -54,6 +58,8 @@ export const MyInformation = () => {
                       <li>Semantic UI </li>
                       <li>Axios</li>
                       <li>Formik</li>
+                      <li>React hook form</li>
+                      <li>Yup</li>
                       <li>Gatsby</li>
                       <li>Github</li>
                       <li>Gitlab</li>
@@ -96,33 +102,46 @@ export const MyInformation = () => {
           </Grid>
         </Container>
       </div>
-      <Grid container className={classes.cardCv}>
-        <Grid item xs={12}>
-          <Typography variant="h3" className={classes.titleSkills}>
-            ¿Prefieres ver mi cv?
-          </Typography>
-          <Typography variant="h5" className={classes.subtitleCv}>
-            Puedes ver información más detallada en mi cv
-          </Typography>
-        </Grid>
-        <Grid item xs={12}></Grid>
-        <Grid item xs={12} className={classes.gridButtonCv}>
-          <a
-            href={cv}
-            download="cv - Christian Javier Cedillo Palacios"
-            className={classes.textButton}
-          >
-            <Button
-              color="secondary"
-              variant="contained"
-              style={{ fontWeight: 700 }}
-              className={classes.button}
-            >
-              Descargar CV
-            </Button>
-          </a>
-        </Grid>
-      </Grid>
+      <div className={classes.cardCv} ref={cvRef}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={isInCv ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className={classes.motionDiv}
+        >
+          <Grid container>
+            <Grid item xs={12}>
+              <Typography variant="h3" className={classes.titleSkills}>
+                ¿Prefieres ver mi cv?
+              </Typography>
+              <Typography variant="h5" className={classes.subtitleCv}>
+                Puedes ver información más detallada en mi cv
+              </Typography>
+            </Grid>
+            <Grid item xs={12}></Grid>
+            <Grid item xs={12} className={classes.gridButtonCv}>
+              <a
+                href={cv}
+                download="cv - Christian Javier Cedillo Palacios"
+                className={classes.textButton}
+              >
+                <Button
+                  color="secondary"
+                  variant="contained"
+                  style={{ fontWeight: 700 }}
+                  className={classes.button}
+                >
+                  Descargar CV
+                </Button>
+              </a>
+            </Grid>
+          </Grid>
+        </motion.div>
+      </div>
     </>
   );
 };

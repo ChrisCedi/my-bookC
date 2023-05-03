@@ -33,6 +33,8 @@ import nomad from "./Files/nomad.svg";
 import mainBackground from "./Files/backgrounds/main-background.gif";
 import contactBackground from "./Files/backgrounds/contact-background.gif";
 import earth from "./Files/earth.jpg";
+import styledIcon from "./Files/styled-icon.png";
+import reactHookIcon from "./Files/react-hook.png";
 
 export const Images = {
   profile1,
@@ -70,4 +72,6 @@ export const Images = {
   mainBackground,
   contactBackground,
   earth,
+  styledIcon,
+  reactHookIcon,
 };

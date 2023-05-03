@@ -80,6 +80,13 @@ export const Carousel = () => {
       <SwiperSlide className={classes.sliderImage}>
         <img
           className={classes.imageSlider}
+          src={Images.styledIcon}
+          alt="styledComp"
+        />
+      </SwiperSlide>
+      <SwiperSlide className={classes.sliderImage}>
+        <img
+          className={classes.imageSlider}
           src={Images.bootstrapIcon}
           alt="booststrap"
         />
