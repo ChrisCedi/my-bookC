@@ -42,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
   },
+  phoneText: {
+    color: theme.palette.common.white,
+  },
 }));
 
 export { useStyles };

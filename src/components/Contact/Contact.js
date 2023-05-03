@@ -38,6 +38,11 @@ export const Contact = () => {
             }}
           >
             <motion.div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "tween", stiffness: 300, damping: 1 }}
             >
@@ -48,6 +53,43 @@ export const Contact = () => {
                   className={classes.image}
                 />
               </a>
+              <Typography variant="h6" className={classes.phoneText}>
+                5583168743
+              </Typography>
+            </motion.div>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            className={classes.gridImage}
+            style={{
+              transform: isInVIew ? "none" : "translateX(-200px)",
+              opacity: isInVIew ? 1 : 0,
+              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.0s",
+            }}
+          >
+            <motion.div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "tween", stiffness: 300, damping: 1 }}
+            >
+              <a href="mailto:christian.cedillo.palacios@outlook.com">
+                <img
+                  src={Images.email}
+                  alt="sadasssd"
+                  className={classes.image}
+                />
+              </a>
+              <Typography variant="h6" className={classes.phoneText}>
+                christian.cedillo.palacios@outlook.com
+              </Typography>
             </motion.div>
           </Grid>
           <Grid
@@ -63,6 +105,11 @@ export const Contact = () => {
             }}
           >
             <motion.div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
               whileHover={{ scale: 1.1 }}
               transition={{ type: "tween", stiffness: 300, damping: 1 }}
             >
@@ -73,31 +120,9 @@ export const Contact = () => {
                   className={classes.image}
                 />
               </a>
-            </motion.div>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
-            className={classes.gridImage}
-            style={{
-              transform: isInVIew ? "none" : "translateX(-200px)",
-              opacity: isInVIew ? 1 : 0,
-              transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 1.0s",
-            }}
-          >
-            <motion.div
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "tween", stiffness: 300, damping: 1 }}
-            >
-              <a href="mailto:christian.cedillo.palacios@outlook.com">
-                <img
-                  src={Images.email}
-                  alt="sadasssd"
-                  className={classes.image}
-                />
-              </a>
+              <Typography variant="h6" className={classes.phoneText}>
+                ChrisCedi
+              </Typography>
             </motion.div>
           </Grid>
         </Grid>
