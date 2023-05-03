@@ -11,9 +11,13 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: theme.spacing(5),
     minHeight: "230px",
     width: "75%",
-    backgroundColor: theme.palette.common.white,
+    background: theme.palette.common.white,
     borderRadius: 10,
     boxShadow: "0px 3px 6px #00000029",
+    transition: "background .8s ease-in-out",
+    "&:hover": {
+      background: "#ebbeef",
+    },
   },
   information: {
     display: "flex",

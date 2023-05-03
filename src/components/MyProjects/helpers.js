@@ -2,6 +2,20 @@ import { Images } from "../../assets/Images";
 
 export const projects = [
   {
+    nameProject: "User control",
+    description:
+      "El objetivo es permitir a los usuarios ver y administrar el contenido que han creado y subido a la plataforma. La aplicación está diseñada para ofrecer una experiencia de usuario intuitiva y fácil de usar, y cuenta con una serie de funciones clave para ayudar a los usuarios a gestionar su contenido de manera eficaz.",
+    link: "https://usercontrolc.netlify.app/",
+    github: "https://github.com/ChrisCedi/user-control",
+    tools: [
+      Images.reactIcon,
+      Images.styledIcon,
+      Images.javascriptIcon,
+      Images.reactHookIcon,
+      Images.reduxIcon,
+    ],
+  },
+  {
     nameProject: "Catalogo de Marvel",
     description:
       "Aquí encontrarás detalles completos de todos los personajes de este emocionante universo, desde los más conocidos como Iron Man y Spider-Man hasta los más recientes y menos conocidos. En nuestra plataforma podrás explorar datos información de los personajes, sus apariciones en cómics, así como sus diferentes versiones. ",
@@ -27,18 +41,7 @@ export const projects = [
       Images.bootstrapIcon,
     ],
   },
-  {
-    nameProject: "Administrador de pacientes",
-    description:
-      "Esta página web está diseñada para facilitar la gestión de pacientes mascotas y su historial clínico. Es una herramienta esencial para los médicos veterinarios que buscan una manera fácil y efectiva de gestionar sus pacientes y tener mejor control con sus clientes. ",
-    link: "https://stoic-wiles-76a71e.netlify.app/",
-    tools: [
-      Images.reactIcon,
-      Images.bootstrapIcon,
-      Images.javascriptIcon,
-      Images.cssIcon,
-    ],
-  },
+
   {
     nameProject: "We are",
     description:

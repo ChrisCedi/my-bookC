@@ -25,10 +25,15 @@ const CardProject = ({ width, project }) => {
       </Grid>
       <Grid className={classes.gridButtons}>
         {project.link && (
-          <a href={`${project.link}`} className={classes.textButton}>
+          <a
+            href={`${project.link}`}
+            className={classes.textButton}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button
               variant="outlined"
-              color="secondary"
+              color="primary"
               className={classes.buttonProject}
               style={{ borderRadius: 25, fontWeight: 600 }}
             >
@@ -37,7 +42,12 @@ const CardProject = ({ width, project }) => {
           </a>
         )}
         {project.github && (
-          <a href={`${project.github}`} className={classes.textButton}>
+          <a
+            href={`${project.github}`}
+            target="_blank"
+            rel="noreferrer"
+            className={classes.textButton}
+          >
             <Button
               variant="outlined"
               color="primary"
