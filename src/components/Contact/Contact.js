@@ -46,7 +46,11 @@ export const Contact = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "tween", stiffness: 300, damping: 1 }}
             >
-              <a href="https://wa.me/5583168743">
+              <a
+                href="https://wa.me/5583168743"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={Images.whatsapp}
                   alt="sadasssd"
@@ -80,7 +84,11 @@ export const Contact = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "tween", stiffness: 300, damping: 1 }}
             >
-              <a href="mailto:christian.cedillo.palacios@outlook.com">
+              <a
+                href="mailto:christian.cedillo.palacios@outlook.com"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <img
                   src={Images.email}
                   alt="sadasssd"
@@ -113,12 +121,12 @@ export const Contact = () => {
               whileHover={{ scale: 1.1 }}
               transition={{ type: "tween", stiffness: 300, damping: 1 }}
             >
-              <a href="https://github.com/ChrisCedi">
-                <img
-                  src={Images.github}
-                  alt="sadasssd"
-                  className={classes.image}
-                />
+              <a
+                href="https://github.com/ChrisCedi"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Images.github} alt="git" className={classes.image} />
               </a>
               <Typography variant="h6" className={classes.phoneText}>
                 ChrisCedi
